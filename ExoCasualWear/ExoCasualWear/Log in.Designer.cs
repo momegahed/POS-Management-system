@@ -88,7 +88,7 @@
             this.button2.Text = "Forgot Password ?";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,8 +99,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.passwordbox);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

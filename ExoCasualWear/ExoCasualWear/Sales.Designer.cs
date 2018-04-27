@@ -63,7 +63,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(572, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 39);
+            this.label1.Size = new System.Drawing.Size(148, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Barcode:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -117,6 +117,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Sales";
             this.Text = "Sales";
+            this.Load += new System.EventHandler(this.Sales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -21,5 +21,10 @@ namespace ExoCasualWear
         {
 
         }
+
+        private void Sales_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
