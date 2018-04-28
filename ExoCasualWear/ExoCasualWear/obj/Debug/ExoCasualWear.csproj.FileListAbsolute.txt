@@ -21,3 +21,6 @@ C:\Users\Ahmed Wael\Source\Repos\DataManagementProject18\ExoCasualWear\ExoCasual
 C:\Users\Ahmed Wael\Source\Repos\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.CoreCompileInputs.cache
 C:\Users\Ahmed Wael\Source\Repos\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
 C:\Users\Ahmed Wael\Source\Repos\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.pdb
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.additem.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addemployee.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addcustomer.resources

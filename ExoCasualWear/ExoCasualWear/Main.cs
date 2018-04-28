@@ -30,5 +30,23 @@ namespace ExoCasualWear
                 Application.Exit();
             }
         }
+
+        private void addItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            additem ai = new additem();
+            ai.Show();
+        }
+
+        private void addEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addemployee ae = new addemployee();
+            ae.Show();
+        }
+
+        private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addcustomer ac = new addcustomer();
+            ac.Show();
+        }
     }
 }
