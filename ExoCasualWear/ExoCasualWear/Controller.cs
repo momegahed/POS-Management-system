@@ -52,7 +52,7 @@ namespace ExoCasualWear
         public DataTable ItemProfile(string ItemNum)
         {
             string query = "SELECT Item_discription, Category, Item_size, Color, Brand, Offer.Value, O_Start, O_End, SoldAt.Available, SoldAt.StID, Store.St_City, Store.St_State  FROM Items, Offer, SoldAt, Store WHERE ItemNO#='" + ItemNum + "' AND Items.OfID=Offer.OfferID AND SoldAt.ItemsNumber=Items.ItemNO# AND SoldAt.StID=Store.Store#;";
-            return dbMan.ExecuteTableQuery(query);
+            return dbMan.ExecuteTableQuery(query);      
         }
 
         public DataTable MemberProfile(string MemberNum)
