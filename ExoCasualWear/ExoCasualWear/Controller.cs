@@ -71,5 +71,12 @@ namespace ExoCasualWear
             string query = "select stid, st_city, st_state, itemsnumber, item_discription as Item_name, max(sold) as #sold from soldAt s , store,  items where itemsnumber=itemNO# AND stid=store# group by stid, itemsnumber, st_city, st_state, item_discription having max(sold) = ( select top 1 max(sold) from soldAt where stid = s.stid group by stid, itemsnumber order by max(sold) desc);";
             return dbMan.ExecuteTableQuery(query);
         }
+
+        public DataTable MostSoldItemPerStore(string CheckDate) //User input the date required for the check that no items are sold after it
+        {
+            string query = "SELECT Items.ItemNO#,Items.Item_discription FROM Items WHERE itemNo# NOT IN( select distinct Item#No from R_Contains, Receipt WHERE R_Contains.ReceiptID=Receipt.Receipt# AND Receipt.R_Date>='"+CheckDate+"');";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
     }
 }
