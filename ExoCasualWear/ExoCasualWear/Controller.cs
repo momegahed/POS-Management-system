@@ -66,7 +66,7 @@ namespace ExoCasualWear
             string query = "SELECT ShipmentID#, Sh_Date, Supplier.Su_Fname, Supplier.Su_Lname, Supplier.Su_Phone#, Supply_Store.ItemsNum, Supply_Store.StoreID, Supply_Store.Quantity, Items.Item_discription, Items.Price, Offer.Value FROM Shipment, Supplier, Supply_Store, Items, Offer WHERE ShipmentID#='" + ShipNum + "' AND Shipment.SupID#=Supplier.SupplierID# AND Supply_Store.ShipID=Shipment.ShipmentID# AND Supply_Store.ItemsNum=Items.ItemNO# AND Items.OfID=Offer.OfferID;";
             return dbMan.ExecuteTableQuery(query);
         }
-        public DataTable ShipmentProfile()
+        public DataTable MostSoldItemPerStore()
         {
             string query = "select stid, st_city, st_state, itemsnumber, item_discription as Item_name, max(sold) as #sold from soldAt s , store,  items where itemsnumber=itemNO# AND stid=store# group by stid, itemsnumber, st_city, st_state, item_discription having max(sold) = ( select top 1 max(sold) from soldAt where stid = s.stid group by stid, itemsnumber order by max(sold) desc);";
             return dbMan.ExecuteTableQuery(query);
