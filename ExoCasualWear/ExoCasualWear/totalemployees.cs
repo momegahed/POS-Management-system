@@ -28,5 +28,10 @@ namespace ExoCasualWear
         {
             totals.Text = c.CalcEmp().ToString();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

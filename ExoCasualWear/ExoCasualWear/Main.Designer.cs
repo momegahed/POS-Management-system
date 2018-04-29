@@ -44,14 +44,20 @@
             this.itemsListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.analysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.itemsFrequencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timeAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.totalEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.totalSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemsFrequencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timeAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shipmentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -169,7 +175,9 @@
             this.itemsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itemsListToolStripMenuItem,
             this.addItemToolStripMenuItem,
-            this.editItemToolStripMenuItem});
+            this.editItemToolStripMenuItem,
+            this.itemDetailsToolStripMenuItem,
+            this.shipmentDetailsToolStripMenuItem});
             this.itemsToolStripMenuItem.Name = "itemsToolStripMenuItem";
             this.itemsToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.itemsToolStripMenuItem.Text = "Items";
@@ -177,54 +185,34 @@
             // itemsListToolStripMenuItem
             // 
             this.itemsListToolStripMenuItem.Name = "itemsListToolStripMenuItem";
-            this.itemsListToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.itemsListToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.itemsListToolStripMenuItem.Text = "Items list";
             // 
             // addItemToolStripMenuItem
             // 
             this.addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
-            this.addItemToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.addItemToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.addItemToolStripMenuItem.Text = "Add Item";
             this.addItemToolStripMenuItem.Click += new System.EventHandler(this.addItemToolStripMenuItem_Click);
             // 
             // editItemToolStripMenuItem
             // 
             this.editItemToolStripMenuItem.Name = "editItemToolStripMenuItem";
-            this.editItemToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.editItemToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.editItemToolStripMenuItem.Text = "Edit Item";
             // 
-            // analysisToolStripMenuItem
+            // itemDetailsToolStripMenuItem
             // 
-            this.analysisToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salesAnalysisToolStripMenuItem,
-            this.itemsFrequencyToolStripMenuItem,
-            this.timeAnalysisToolStripMenuItem});
-            this.analysisToolStripMenuItem.Name = "analysisToolStripMenuItem";
-            this.analysisToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
-            this.analysisToolStripMenuItem.Text = "Analysis";
-            // 
-            // salesAnalysisToolStripMenuItem
-            // 
-            this.salesAnalysisToolStripMenuItem.Name = "salesAnalysisToolStripMenuItem";
-            this.salesAnalysisToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
-            this.salesAnalysisToolStripMenuItem.Text = "Sales Analysis";
-            // 
-            // itemsFrequencyToolStripMenuItem
-            // 
-            this.itemsFrequencyToolStripMenuItem.Name = "itemsFrequencyToolStripMenuItem";
-            this.itemsFrequencyToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
-            this.itemsFrequencyToolStripMenuItem.Text = "Items Frequency";
-            // 
-            // timeAnalysisToolStripMenuItem
-            // 
-            this.timeAnalysisToolStripMenuItem.Name = "timeAnalysisToolStripMenuItem";
-            this.timeAnalysisToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
-            this.timeAnalysisToolStripMenuItem.Text = "Time Analysis";
+            this.itemDetailsToolStripMenuItem.Name = "itemDetailsToolStripMenuItem";
+            this.itemDetailsToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
+            this.itemDetailsToolStripMenuItem.Text = "Item details";
+            this.itemDetailsToolStripMenuItem.Click += new System.EventHandler(this.itemDetailsToolStripMenuItem_Click);
             // 
             // employeesToolStripMenuItem
             // 
             this.employeesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addEmployeeToolStripMenuItem});
+            this.addEmployeeToolStripMenuItem,
+            this.totalEmployeesToolStripMenuItem});
             this.employeesToolStripMenuItem.Name = "employeesToolStripMenuItem";
             this.employeesToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.employeesToolStripMenuItem.Text = "Employees";
@@ -232,14 +220,22 @@
             // addEmployeeToolStripMenuItem
             // 
             this.addEmployeeToolStripMenuItem.Name = "addEmployeeToolStripMenuItem";
-            this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
             this.addEmployeeToolStripMenuItem.Text = "Add Employee";
             this.addEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addEmployeeToolStripMenuItem_Click);
+            // 
+            // totalEmployeesToolStripMenuItem
+            // 
+            this.totalEmployeesToolStripMenuItem.Name = "totalEmployeesToolStripMenuItem";
+            this.totalEmployeesToolStripMenuItem.Size = new System.Drawing.Size(187, 24);
+            this.totalEmployeesToolStripMenuItem.Text = "Total Employees";
+            this.totalEmployeesToolStripMenuItem.Click += new System.EventHandler(this.totalEmployeesToolStripMenuItem_Click);
             // 
             // customersToolStripMenuItem
             // 
             this.customersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addCustomerToolStripMenuItem});
+            this.addCustomerToolStripMenuItem,
+            this.customerDetailsToolStripMenuItem});
             this.customersToolStripMenuItem.Name = "customersToolStripMenuItem";
             this.customersToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.customersToolStripMenuItem.Text = "Customers";
@@ -250,6 +246,64 @@
             this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
             this.addCustomerToolStripMenuItem.Text = "Add Customer";
             this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.addCustomerToolStripMenuItem_Click);
+            // 
+            // analysisToolStripMenuItem
+            // 
+            this.analysisToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salesAnalysisToolStripMenuItem,
+            this.itemsFrequencyToolStripMenuItem,
+            this.timeAnalysisToolStripMenuItem,
+            this.toolStripMenuItem1});
+            this.analysisToolStripMenuItem.Name = "analysisToolStripMenuItem";
+            this.analysisToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.analysisToolStripMenuItem.Text = "Analysis";
+            // 
+            // salesAnalysisToolStripMenuItem
+            // 
+            this.salesAnalysisToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.totalSalesToolStripMenuItem});
+            this.salesAnalysisToolStripMenuItem.Name = "salesAnalysisToolStripMenuItem";
+            this.salesAnalysisToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.salesAnalysisToolStripMenuItem.Text = "Sales Analysis";
+            // 
+            // totalSalesToolStripMenuItem
+            // 
+            this.totalSalesToolStripMenuItem.Name = "totalSalesToolStripMenuItem";
+            this.totalSalesToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
+            this.totalSalesToolStripMenuItem.Text = "Total Sales";
+            this.totalSalesToolStripMenuItem.Click += new System.EventHandler(this.totalSalesToolStripMenuItem_Click);
+            // 
+            // itemsFrequencyToolStripMenuItem
+            // 
+            this.itemsFrequencyToolStripMenuItem.Name = "itemsFrequencyToolStripMenuItem";
+            this.itemsFrequencyToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.itemsFrequencyToolStripMenuItem.Text = "Items Frequency";
+            this.itemsFrequencyToolStripMenuItem.Click += new System.EventHandler(this.itemsFrequencyToolStripMenuItem_Click);
+            // 
+            // timeAnalysisToolStripMenuItem
+            // 
+            this.timeAnalysisToolStripMenuItem.Name = "timeAnalysisToolStripMenuItem";
+            this.timeAnalysisToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
+            this.timeAnalysisToolStripMenuItem.Text = "Time Analysis";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(185, 24);
+            // 
+            // customerDetailsToolStripMenuItem
+            // 
+            this.customerDetailsToolStripMenuItem.Name = "customerDetailsToolStripMenuItem";
+            this.customerDetailsToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.customerDetailsToolStripMenuItem.Text = "Customer details";
+            this.customerDetailsToolStripMenuItem.Click += new System.EventHandler(this.customerDetailsToolStripMenuItem_Click);
+            // 
+            // shipmentDetailsToolStripMenuItem
+            // 
+            this.shipmentDetailsToolStripMenuItem.Name = "shipmentDetailsToolStripMenuItem";
+            this.shipmentDetailsToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.shipmentDetailsToolStripMenuItem.Text = "Shipment details";
+            this.shipmentDetailsToolStripMenuItem.Click += new System.EventHandler(this.shipmentDetailsToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -301,5 +355,11 @@
         private System.Windows.Forms.ToolStripMenuItem addEmployeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addCustomerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem totalSalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem totalEmployeesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem itemDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customerDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shipmentDetailsToolStripMenuItem;
     }
 }

@@ -64,6 +64,18 @@
     </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
+    <Compile Include="itemdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="itemdetails.Designer.cs">
+      <DependentUpon>itemdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemsnotsold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="itemsnotsold.Designer.cs">
+      <DependentUpon>itemsnotsold.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,18 @@
     <Compile Include="Log in.Designer.cs">
       <DependentUpon>Log in.cs</DependentUpon>
     </Compile>
+    <Compile Include="memberdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memberdetails.Designer.cs">
+      <DependentUpon>memberdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mostsolditemperstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mostsolditemperstore.Designer.cs">
+      <DependentUpon>mostsolditemperstore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales.cs">
@@ -83,6 +107,24 @@
     </Compile>
     <Compile Include="Sales.Designer.cs">
       <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipmentdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipmentdetails.Designer.cs">
+      <DependentUpon>shipmentdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="totalemployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="totalemployees.Designer.cs">
+      <DependentUpon>totalemployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="totalsales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="totalsales.Designer.cs">
+      <DependentUpon>totalsales.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="addcustomer.resx">
       <DependentUpon>addcustomer.cs</DependentUpon>
@@ -93,11 +135,20 @@
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="itemdetails.resx">
+      <DependentUpon>itemdetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log in.resx">
       <DependentUpon>Log in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberdetails.resx">
+      <DependentUpon>memberdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mostsolditemperstore.resx">
+      <DependentUpon>mostsolditemperstore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +162,15 @@
     </Compile>
     <EmbeddedResource Include="Sales.resx">
       <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipmentdetails.resx">
+      <DependentUpon>shipmentdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="totalemployees.resx">
+      <DependentUpon>totalemployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="totalsales.resx">
+      <DependentUpon>totalsales.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

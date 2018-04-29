@@ -37,18 +37,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 190);
+            this.label1.Location = new System.Drawing.Point(27, 190);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 38);
+            this.label1.Size = new System.Drawing.Size(256, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Total Employees";
+            this.label1.Text = "Total employees";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // totals
             // 
             this.totals.AutoSize = true;
             this.totals.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.totals.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totals.Location = new System.Drawing.Point(292, 190);
+            this.totals.Location = new System.Drawing.Point(289, 190);
             this.totals.MinimumSize = new System.Drawing.Size(200, 0);
             this.totals.Name = "totals";
             this.totals.Size = new System.Drawing.Size(200, 38);

@@ -1,6 +1,6 @@
 ﻿namespace ExoCasualWear
 {
-    partial class totalemployees
+    partial class totalsales
     {
         /// <summary>
         /// Required designer variable.
@@ -65,7 +65,7 @@
             this.updatebutton.UseVisualStyleBackColor = true;
             this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
             // 
-            // totalemployees
+            // totalsales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,9 +73,9 @@
             this.Controls.Add(this.updatebutton);
             this.Controls.Add(this.totals);
             this.Controls.Add(this.label1);
-            this.Name = "totalemployees";
+            this.Name = "totalsales";
             this.Tag = " ";
-            this.Text = "totalemployees";
+            this.Text = "totalsales";
             this.ResumeLayout(false);
             this.PerformLayout();
 

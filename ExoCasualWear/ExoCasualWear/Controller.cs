@@ -72,7 +72,7 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
-        public DataTable MostSoldItemPerStore(string CheckDate) //User input the date required for the check that no items are sold after it
+        public DataTable itemNotsold(string CheckDate) //User input the date required for the check that no items are sold after it
         {
             string query = "SELECT Items.ItemNO#,Items.Item_discription FROM Items WHERE itemNo# NOT IN( select distinct Item#No from R_Contains, Receipt WHERE R_Contains.ReceiptID=Receipt.Receipt# AND Receipt.R_Date>='"+CheckDate+"');";
             return dbMan.ExecuteTableQuery(query);

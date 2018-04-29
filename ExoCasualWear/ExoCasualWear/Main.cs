@@ -48,5 +48,42 @@ namespace ExoCasualWear
             addcustomer ac = new addcustomer();
             ac.Show();
         }
+
+        private void totalSalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            totalsales ts = new totalsales();
+            ts.Show();
+        }
+
+        private void totalEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            totalemployees te = new totalemployees();
+            te.Show();
+        }
+
+        private void itemsFrequencyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mostsolditemperstore ms = new mostsolditemperstore();
+            ms.Show();
+        }
+
+        private void itemDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            itemdetails id = new itemdetails();
+            id.Show();
+        }
+
+        private void customerDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            memberdetails md = new memberdetails();
+            md.Show();
+        }
+
+        private void shipmentDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            shipmentdetails sd = new shipmentdetails();
+
+            sd.Show();
+        }
     }
 }

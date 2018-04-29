@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ExoCasualWear
 {
-    public partial class totalemployees : Form
+    public partial class totalsales : Form
     {
-        public totalemployees()
+        public totalsales()
         {
             InitializeComponent();
         }
