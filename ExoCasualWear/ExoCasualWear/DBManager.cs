@@ -6,12 +6,14 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 
+using System.Configuration; 
+
 namespace ExoCasualWear
 {
     public class DBManager
     {
-        
-        static string DB_Connection_String = @"Data Source=DESKTOP-46V9KI8\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True";
+
+        static string DB_Connection_String = @"Data Source=DESKTOP-MOEL9CN\SQLEXPRESS;Initial Catalog=Q2;Integrated Security=True";
 
         SqlConnection myConnection;
         
