@@ -84,18 +84,6 @@
     <Compile Include="Sales.Designer.cs">
       <DependentUpon>Sales.cs</DependentUpon>
     </Compile>
-    <Compile Include="totalemployees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="totalemployees.Designer.cs">
-      <DependentUpon>totalemployees.cs</DependentUpon>
-    </Compile>
-    <Compile Include="totalsales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="totalsales.Designer.cs">
-      <DependentUpon>totalsales.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="addcustomer.resx">
       <DependentUpon>addcustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,18 +112,6 @@
     <EmbeddedResource Include="Sales.resx">
       <DependentUpon>Sales.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="totalemployees.resx">
-      <DependentUpon>totalemployees.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="totalsales.resx">
-      <DependentUpon>totalsales.cs</DependentUpon>
-    </EmbeddedResource>
-=======
-    <None Include="App1.config">
-      <SubType>Designer</SubType>
-    </None>
->>>>>>> 858bb32e1edd8e6707a234a1cb4d3147b07406dd
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

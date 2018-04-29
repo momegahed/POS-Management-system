@@ -48,17 +48,5 @@ namespace ExoCasualWear
             addcustomer ac = new addcustomer();
             ac.Show();
         }
-
-        private void totalSalesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            totalsales ts = new totalsales();
-            ts.Show();
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            totalemployees te = new totalemployees();
-            te.Show();
-        }
     }
 }

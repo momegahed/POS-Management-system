@@ -24,7 +24,6 @@ namespace ExoCasualWear
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hi");
             Controller c = new Controller();
             c.InsertCustomer(subid.Text, fname.Text, lname.Text, phonenumber.Text);
         }
