@@ -74,7 +74,7 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
-        public DataTable ItemsNotSold(string CheckDate) //User input the date required to output the items that has not been sold since that date
+        public DataTable ItemsNotsold(string CheckDate) //User input the date required to output the items that has not been sold since that date
         {
             string query = "SELECT Items.ItemNO#,Items.Item_discription FROM Items WHERE itemNo# NOT IN( select distinct Item#No from R_Contains, Receipt WHERE R_Contains.ReceiptID=Receipt.Receipt# AND Receipt.R_Date>='"+CheckDate+"');";
             return dbMan.ExecuteTableQuery(query);
