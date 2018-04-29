@@ -36,9 +36,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.address = new System.Windows.Forms.TextBox();
+            this.city = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.sid = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.state = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.street = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.sthours = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.stid = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // fname
@@ -96,7 +104,7 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(145, 245);
+            this.id.Location = new System.Drawing.Point(145, 243);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(116, 22);
             this.id.TabIndex = 11;
@@ -105,45 +113,118 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(319, 251);
+            this.label3.Location = new System.Drawing.Point(319, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 17);
+            this.label3.Size = new System.Drawing.Size(31, 17);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Address";
+            this.label3.Text = "City";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
-            // address
+            // city
             // 
-            this.address.Location = new System.Drawing.Point(385, 248);
-            this.address.Multiline = true;
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(262, 114);
-            this.address.TabIndex = 13;
+            this.city.Location = new System.Drawing.Point(379, 243);
+            this.city.Name = "city";
+            this.city.Size = new System.Drawing.Size(76, 22);
+            this.city.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 305);
+            this.label4.Location = new System.Drawing.Point(46, 302);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 17);
             this.label4.TabIndex = 16;
             this.label4.Text = "Supervisor ID";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // sid
             // 
-            this.sid.Location = new System.Drawing.Point(145, 302);
+            this.sid.Location = new System.Drawing.Point(145, 298);
             this.sid.Name = "sid";
             this.sid.Size = new System.Drawing.Size(116, 22);
             this.sid.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(487, 246);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 17);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "state";
+            // 
+            // state
+            // 
+            this.state.Location = new System.Drawing.Point(544, 243);
+            this.state.Name = "state";
+            this.state.Size = new System.Drawing.Size(76, 22);
+            this.state.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(319, 303);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 17);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "street";
+            // 
+            // street
+            // 
+            this.street.Location = new System.Drawing.Point(379, 299);
+            this.street.Name = "street";
+            this.street.Size = new System.Drawing.Size(241, 22);
+            this.street.TabIndex = 19;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(604, 212);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 17);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "store hours";
+            // 
+            // sthours
+            // 
+            this.sthours.Location = new System.Drawing.Point(702, 209);
+            this.sthours.Name = "sthours";
+            this.sthours.Size = new System.Drawing.Size(76, 22);
+            this.sthours.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(626, 263);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 17);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "store ID";
+            // 
+            // stid
+            // 
+            this.stid.Location = new System.Drawing.Point(702, 260);
+            this.stid.Name = "stid";
+            this.stid.Size = new System.Drawing.Size(76, 22);
+            this.stid.TabIndex = 23;
             // 
             // addemployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 589);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.stid);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.sthours);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.street);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.state);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.sid);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.address);
+            this.Controls.Add(this.city);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label5);
@@ -169,8 +250,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.TextBox city;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox sid;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox state;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox street;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox sthours;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox stid;
     }
 }
