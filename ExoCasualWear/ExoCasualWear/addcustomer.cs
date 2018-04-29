@@ -24,7 +24,8 @@ namespace ExoCasualWear
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Controller c = new Controller();
+            c.InsertCustomer(subid.Text, fname.Text, lname.Text, phonenumber.Text);
         }
 
         private void additem_Load(object sender, EventArgs e)

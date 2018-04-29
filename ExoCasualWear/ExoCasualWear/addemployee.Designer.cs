@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.addemployeebutton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.id = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.address = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.sid = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // fname
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 22);
-            this.textBox1.TabIndex = 0;
+            this.fname.Location = new System.Drawing.Point(145, 187);
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(116, 22);
+            this.fname.TabIndex = 0;
             // 
             // label1
             // 
@@ -77,12 +77,12 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Last Name";
             // 
-            // textBox4
+            // lname
             // 
-            this.textBox4.Location = new System.Drawing.Point(385, 187);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(116, 22);
-            this.textBox4.TabIndex = 9;
+            this.lname.Location = new System.Drawing.Point(385, 187);
+            this.lname.Name = "lname";
+            this.lname.Size = new System.Drawing.Size(116, 22);
+            this.lname.TabIndex = 9;
             // 
             // label2
             // 
@@ -94,13 +94,13 @@
             this.label2.Text = "ID";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // id
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 245);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(116, 22);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.id.Location = new System.Drawing.Point(145, 245);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(116, 22);
+            this.id.TabIndex = 11;
+            this.id.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -111,13 +111,13 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Address";
             // 
-            // textBox3
+            // address
             // 
-            this.textBox3.Location = new System.Drawing.Point(385, 248);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 114);
-            this.textBox3.TabIndex = 13;
+            this.address.Location = new System.Drawing.Point(385, 248);
+            this.address.Multiline = true;
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(262, 114);
+            this.address.TabIndex = 13;
             // 
             // label4
             // 
@@ -128,12 +128,12 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Supervisor ID";
             // 
-            // textBox5
+            // sid
             // 
-            this.textBox5.Location = new System.Drawing.Point(145, 302);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(116, 22);
-            this.textBox5.TabIndex = 15;
+            this.sid.Location = new System.Drawing.Point(145, 302);
+            this.sid.Name = "sid";
+            this.sid.Size = new System.Drawing.Size(116, 22);
+            this.sid.TabIndex = 15;
             // 
             // addemployee
             // 
@@ -141,16 +141,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 589);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.sid);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.address);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.id);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.lname);
             this.Controls.Add(this.addemployeebutton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.fname);
             this.Name = "addemployee";
             this.Text = " ";
             this.Load += new System.EventHandler(this.addemployee_Load);
@@ -161,16 +161,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button addemployeebutton;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox lname;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox sid;
     }
 }
