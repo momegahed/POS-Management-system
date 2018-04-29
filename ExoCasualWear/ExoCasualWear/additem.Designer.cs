@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.itemno = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.itemdescription = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.price = new System.Windows.Forms.TextBox();
+            this.category = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.additembutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // itemno
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 22);
-            this.textBox1.TabIndex = 0;
+            this.itemno.Location = new System.Drawing.Point(145, 187);
+            this.itemno.Name = "itemno";
+            this.itemno.Size = new System.Drawing.Size(282, 22);
+            this.itemno.TabIndex = 0;
             // 
             // label1
             // 
@@ -64,13 +64,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Item Description";
             // 
-            // textBox2
+            // itemdescription
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 225);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 98);
-            this.textBox2.TabIndex = 2;
+            this.itemdescription.Location = new System.Drawing.Point(145, 225);
+            this.itemdescription.Multiline = true;
+            this.itemdescription.Name = "itemdescription";
+            this.itemdescription.Size = new System.Drawing.Size(282, 98);
+            this.itemdescription.TabIndex = 2;
             // 
             // label3
             // 
@@ -82,20 +82,20 @@
             this.label3.Text = "Price";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox3
+            // price
             // 
-            this.textBox3.Location = new System.Drawing.Point(526, 187);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 22);
-            this.textBox3.TabIndex = 4;
+            this.price.Location = new System.Drawing.Point(526, 187);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(158, 22);
+            this.price.TabIndex = 4;
             // 
-            // comboBox1
+            // category
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(526, 257);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 24);
-            this.comboBox1.TabIndex = 6;
+            this.category.FormattingEnabled = true;
+            this.category.Location = new System.Drawing.Point(526, 257);
+            this.category.Name = "category";
+            this.category.Size = new System.Drawing.Size(158, 24);
+            this.category.TabIndex = 6;
             // 
             // label4
             // 
@@ -123,13 +123,13 @@
             this.ClientSize = new System.Drawing.Size(823, 589);
             this.Controls.Add(this.additembutton);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.category);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.price);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.itemdescription);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.itemno);
             this.Name = "additem";
             this.Text = " ";
             this.Load += new System.EventHandler(this.additem_Load);
@@ -140,13 +140,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox itemno;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox itemdescription;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox price;
+        private System.Windows.Forms.ComboBox category;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button additembutton;
     }
