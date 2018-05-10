@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 
-
 namespace ExoCasualWear
 {
     public class Controller
@@ -15,7 +14,6 @@ namespace ExoCasualWear
         public Controller()
         {
             dbMan = new DBManager();
-
         }
 
         public int InsertEmployee(string ID, string E_Fname, string E_Lname, string E_City, string E_Street, string E_State, int St_Hours, string St_ID, string Super_ID)
