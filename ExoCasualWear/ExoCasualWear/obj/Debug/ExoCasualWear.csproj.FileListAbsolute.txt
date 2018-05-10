@@ -31,13 +31,7 @@ H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualW
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.mostsolditemperstore.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.shipmentdetails.resources
 <<<<<<< HEAD
-<<<<<<< HEAD
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addshipment.resources
-=======
-C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe.config
-C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
-C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.pdb
->>>>>>> 17f89f0b477908ad1165524d4cf82b40e2c3e22c
 =======
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe.config
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
