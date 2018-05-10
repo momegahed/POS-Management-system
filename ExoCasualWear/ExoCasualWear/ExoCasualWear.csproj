@@ -62,12 +62,6 @@
     <Compile Include="additem.Designer.cs">
       <DependentUpon>additem.cs</DependentUpon>
     </Compile>
-    <Compile Include="addshipment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addshipment.Designer.cs">
-      <DependentUpon>addshipment.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
     <Compile Include="itemdetails.cs">
@@ -140,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addshipment.resx">
-      <DependentUpon>addshipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="itemdetails.resx">
       <DependentUpon>itemdetails.cs</DependentUpon>
