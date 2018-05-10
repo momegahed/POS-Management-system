@@ -85,5 +85,23 @@ namespace ExoCasualWear
 
             sd.Show();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void addShipmentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addshipment dd = new addshipment();
+            dd.Show();
+        }
+
+        private void shipmentDetailsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            shipmentdetails sd = new shipmentdetails();
+
+            sd.Show();
+        }
     }
 }

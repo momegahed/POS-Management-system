@@ -5,13 +5,14 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
-using System.Configuration;
 
 namespace ExoCasualWear
 {
     public class DBManager
     {
-        static string DB_Connection_String = @"Data Source=DESKTOP-Q52ELKH\SQLEXPRESS;Initial Catalog=CstoreTest1;Integrated Security=True";
+        
+        static string DB_Connection_String = @"Data Source=DESKTOP-46V9KI8\SQLEXPRESS;Initial Catalog=Project;Integrated Security=True";
+
         SqlConnection myConnection;
         
         

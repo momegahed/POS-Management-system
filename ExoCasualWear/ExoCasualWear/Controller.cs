@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 
-
 namespace ExoCasualWear
 {
     public class Controller
@@ -15,14 +14,14 @@ namespace ExoCasualWear
         public Controller()
         {
             dbMan = new DBManager();
-
         }
 
         public int InsertEmployee(string ID, string E_Fname, string E_Lname, string E_City, string E_Street, string E_State, int St_Hours, string St_ID, string Super_ID)
         {
             string query = "INSERT INTO Employee (ID, E_Fname, E_Lname, E_City, E_street, E_State, St_Hours, St_ID, Super_ID " +
                             "Values ('" + ID + "','" + E_Fname + "','" + E_Lname + "'," + E_City + "'," + E_Street + "'," + E_State + "'," + St_Hours + "'," + St_ID + "'," + Super_ID + ");";
-            return Int16.Parse(dbMan.UpdateData(query).ToString());
+
+            return dbMan.UpdateData(query);
         }
         public int InsertItems(string ItemNO, string Item_discription, int Price, string Category, string Item_size, string Color, int Brand, string OFID)
         {
