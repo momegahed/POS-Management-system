@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 
+
 namespace ExoCasualWear
 {
     public class Controller
@@ -14,12 +15,18 @@ namespace ExoCasualWear
         public Controller()
         {
             dbMan = new DBManager();
+
         }
 
         public int InsertEmployee(string ID, string E_Fname, string E_Lname, string E_City, string E_Street, string E_State, int St_Hours, string St_ID, string Super_ID)
         {
+<<<<<<< HEAD
             string query = "INSERT INTO Employee (ID, E_Fname, E_Lname, E_City, E_street, E_State, St_Hours, St_ID, SuperID ) " +
                             "Values ('" + ID + "','" + E_Fname + "','" + E_Lname + "','" + E_City + "','" + E_Street + "','" + E_State + "','" + St_Hours + "','" + St_ID + "','" + Super_ID + "');";
+=======
+            string query = "INSERT INTO Employee (ID, E_Fname, E_Lname, E_City, E_street, E_State, St_Hours, St_ID, Super_ID " +
+                            "Values ('" + ID + "','" + E_Fname + "','" + E_Lname + "'," + E_City + "'," + E_Street + "'," + E_State + "'," + St_Hours + "'," + St_ID + "'," + Super_ID + ");";
+>>>>>>> parent of 00b04ee... fix  I hope 2
             return Int16.Parse(dbMan.UpdateData(query).ToString());
         }
         public int InsertItems(string ItemNO, string Item_discription, int Price, string Category, string Item_size, string Color, int Brand, string OFID)
