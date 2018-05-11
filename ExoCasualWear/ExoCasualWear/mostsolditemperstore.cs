@@ -12,7 +12,7 @@ namespace ExoCasualWear
 {
     public partial class mostsolditemperstore : Form
     {
-        Controller c;
+        Controller c= new Controller ();
         public mostsolditemperstore()
         {
             InitializeComponent();

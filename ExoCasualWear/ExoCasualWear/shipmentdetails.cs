@@ -12,7 +12,7 @@ namespace ExoCasualWear
 {
     public partial class shipmentdetails : Form
     {
-        Controller c;
+        Controller c=new Controller();
         public shipmentdetails()
         {
             InitializeComponent();
@@ -20,7 +20,8 @@ namespace ExoCasualWear
 
         private void searchbutton_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = c.ShipmentProfile(itemidtextbox.Text);
+            DataTable dt = c.ShipmentProfile(Int32.Parse(itemidtextbox.Text));
+            dataGridView1.DataSource = dt;
             dataGridView1.Refresh();
         }
     }
