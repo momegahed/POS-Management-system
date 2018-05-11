@@ -144,5 +144,12 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
+        public int fillship(Int64 ItemNum , int StoreID, int C_Lname, string C_Phone) //to fill data inside shipment
+        {
+            string query = "INSERT INTO Customer (MembershipID#, C_Fname, C_Lname, C_Phone#)" +
+                            "Values ('" + MembershipID + "','" + C_Fname + "','" + C_Lname + "','" + C_Phone + "');";
+
+            return dbMan.UpdateData(query);
+        }
     }
 }
