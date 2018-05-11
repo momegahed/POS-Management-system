@@ -11,8 +11,12 @@ namespace ExoCasualWear
 {
     public partial class Sales : Form
     {
-        int i; 
+        int i;
+        Controller c = new Controller();
+        DataTable buffer = new DataTable();
 
+        DataTable dt = new DataTable();
+         
         public Sales()
         {
             InitializeComponent();
@@ -32,6 +36,18 @@ namespace ExoCasualWear
 
         private void Sales_Load(object sender, EventArgs e)
         {
+            dataGridView1.AutoGenerateColumns = false;  // Disable autogeneration of columns
+
+
+            foreach (DataGridViewColumn col in dataGridView1.Columns)
+            {
+                dt.Columns.Add(col.Name);
+
+                col.DataPropertyName = col.Name;
+            }
+            buffer = dt;
+            buffer =c.getItem(1);
+            buffer.Rows.Clear();
 
         }
 
@@ -67,6 +83,37 @@ namespace ExoCasualWear
 
             }
             else if(dataGridView1.Rows.Count > 1) { dataGridView1.Rows.RemoveAt(i); }
+        }
+
+  
+
+
+
+        private void barcodeentrytextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barcodeentrytextbox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+
+             /*     DataTable itemdata = c.ItemProfile(Int64.Parse(barcodeentrytextbox.Text));
+                //buffer.Rows.Add(itemdata.Rows[0].ItemArray);
+                   dataGridView1.
+                 dataGridView1.Refresh();
+                   barcodeentrytextbox.Text = ";"*/
+              
+                
+                dt = c.getItem(Int64.Parse(barcodeentrytextbox.Text));
+            
+
+                buffer.Rows.Add(dt.Rows[0].ItemArray);
+                dataGridView1.DataSource = buffer;
+
+            }
         }
     }
 }
