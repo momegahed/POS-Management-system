@@ -20,7 +20,7 @@ namespace ExoCasualWear
 
         private void searchbutton_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = c.ItemProfile(itemidtextbox.Text);
+            dataGridView1.DataSource = c.ItemProfile(Int64.Parse(itemidtextbox.Text));
             dataGridView1.Refresh();
         }
     }

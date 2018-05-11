@@ -25,7 +25,7 @@ namespace ExoCasualWear
         private void button1_Click(object sender, EventArgs e)
         {
             Controller c = new Controller();
-            c.InsertEmployee(id.Text, fname.Text, lname.Text, city.Text, street.Text, state.Text, Int32.Parse(sthours.Text),stid.Text,sid.Text);
+            c.InsertEmployee(int.Parse(id.Text), fname.Text, lname.Text, city.Text, street.Text, state.Text, Int32.Parse(sthours.Text),stid.Text,sid.Text);
         }
 
         private void additem_Load(object sender, EventArgs e)
