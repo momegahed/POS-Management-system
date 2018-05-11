@@ -77,6 +77,12 @@
     <Compile Include="forgetpass.Designer.cs">
       <DependentUpon>forgetpass.cs</DependentUpon>
     </Compile>
+    <Compile Include="addsupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addsupplier.Designer.cs">
+      <DependentUpon>addsupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="itemdetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,12 @@
     <Compile Include="Sign_up.Designer.cs">
       <DependentUpon>Sign_up.cs</DependentUpon>
     </Compile>
+    <Compile Include="Supplier Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier Details.Designer.cs">
+      <DependentUpon>Supplier Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="totalemployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addsupplier.resx">
+      <DependentUpon>addsupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="itemdetails.resx">
       <DependentUpon>itemdetails.cs</DependentUpon>
@@ -190,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="shipmentdetails.resx">
       <DependentUpon>shipmentdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier Details.resx">
+      <DependentUpon>Supplier Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="totalemployees.resx">
       <DependentUpon>totalemployees.cs</DependentUpon>

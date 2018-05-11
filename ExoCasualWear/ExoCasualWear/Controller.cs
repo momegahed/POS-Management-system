@@ -131,6 +131,20 @@ namespace ExoCasualWear
             string query = "SELECT Items.ItemNO#,Items.Item_discription FROM Items WHERE itemNo# NOT IN( select distinct Item#No from R_Contains, Receipt WHERE R_Contains.ReceiptID=Receipt.Receipt# AND Receipt.R_Date>='"+CheckDate+"');";
             return dbMan.ExecuteTableQuery(query);
         }
+        //add and details of the supplier
+        public DataTable Supplier_Details(Int32 ID)
+        {
+            string query = "SELECT SupplierID#, Su_Fname, Su_Lname, Su_City, Su_Street, Su_State, Su_Phone#, Email FROM Supplier WHERE SupplierID#=" + ID + ";";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public int AddSupplier(Int32 ID, string FName, string LName, string City, string Street, string State, string Phone, string Email)
+        {
+            string query = "INSERT INTO Supplier (SupplierID#, Su_Fname, Su_Lname, Su_City, Su_Street, Su_State, Su_Phone#, Email)" +
+                             "Values ('" + ID + "','" + FName + "','" + LName + "','" + City + "','" + Street + "','" + State + "','" + Phone + "','" + Email + "');";
+
+            return dbMan.UpdateData(query);
+        }
 
     }
 }

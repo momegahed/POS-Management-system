@@ -42,24 +42,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(270, 334);
+            this.label1.Location = new System.Drawing.Point(27, 65);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 17);
+            this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Date";
             // 
             // itemidtextbox
             // 
-            this.itemidtextbox.Location = new System.Drawing.Point(351, 334);
+            this.itemidtextbox.Location = new System.Drawing.Point(72, 65);
+            this.itemidtextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.itemidtextbox.Name = "itemidtextbox";
-            this.itemidtextbox.Size = new System.Drawing.Size(337, 22);
+            this.itemidtextbox.Size = new System.Drawing.Size(118, 20);
             this.itemidtextbox.TabIndex = 1;
             // 
             // searchbutton
             // 
-            this.searchbutton.Location = new System.Drawing.Point(719, 326);
+            this.searchbutton.Location = new System.Drawing.Point(207, 59);
+            this.searchbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchbutton.Name = "searchbutton";
-            this.searchbutton.Size = new System.Drawing.Size(156, 38);
+            this.searchbutton.Size = new System.Drawing.Size(82, 31);
             this.searchbutton.TabIndex = 2;
             this.searchbutton.Text = "Search";
             this.searchbutton.UseVisualStyleBackColor = true;
@@ -68,29 +71,32 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(132, 42);
+            this.dataGridView1.Location = new System.Drawing.Point(343, 276);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(868, 209);
+            this.dataGridView1.Size = new System.Drawing.Size(651, 170);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(169, 370);
+            this.dataGridView2.Location = new System.Drawing.Point(30, 107);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(868, 209);
+            this.dataGridView2.Size = new System.Drawing.Size(259, 170);
             this.dataGridView2.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(404, 0);
+            this.label2.Location = new System.Drawing.Point(547, 242);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(377, 39);
+            this.label2.Size = new System.Drawing.Size(302, 31);
             this.label2.TabIndex = 5;
             this.label2.Text = "Most sold item per store";
             // 
@@ -98,17 +104,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(335, 266);
+            this.label3.Location = new System.Drawing.Point(34, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(518, 39);
+            this.label3.Size = new System.Drawing.Size(415, 31);
             this.label3.TabIndex = 6;
             this.label3.Text = "Unsold Items from a specific date";
             // 
             // mostsolditemperstore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 580);
+            this.ClientSize = new System.Drawing.Size(993, 539);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView2);
@@ -116,6 +123,7 @@
             this.Controls.Add(this.searchbutton);
             this.Controls.Add(this.itemidtextbox);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "mostsolditemperstore";
             this.Text = "mostsolditemperstore";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
