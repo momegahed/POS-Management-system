@@ -46,7 +46,7 @@ namespace ExoCasualWear
                 col.DataPropertyName = col.Name;
             }
             buffer = dt;
-            buffer =c.ItemProfile(1);
+            buffer =c.getItem(1);
             buffer.Rows.Clear();
 
         }
@@ -107,7 +107,7 @@ namespace ExoCasualWear
                    barcodeentrytextbox.Text = ";"*/
               
                 
-                dt = c.ItemProfile(Int64.Parse(barcodeentrytextbox.Text));
+                dt = c.getItem(Int64.Parse(barcodeentrytextbox.Text));
             
 
                 buffer.Rows.Add(dt.Rows[0].ItemArray);
