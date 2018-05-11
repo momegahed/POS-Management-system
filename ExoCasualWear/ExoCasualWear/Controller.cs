@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using System.Windows.Forms;
+squsing System.Windows.Forms;
 
 
 namespace ExoCasualWear
@@ -17,6 +17,53 @@ namespace ExoCasualWear
             dbMan = new DBManager();
 
         }
+
+        public int CheckPassword(string username, string password)
+        {
+            //Query the DB to check for username/password
+            string query = "SELECT type, ID FROM User_Type, Employee WHERE   ID=EmployeeID AND username = '" + username + "' AND password = '" + password + "' ;";
+            object p = dbMan.ExecuteScalarQuery(query);
+            if (p == null)
+                return 0;
+            else return (int)p;
+
+        }
+        public void ChangePassword(string username, string newpass)
+        {
+            string query = "UPDATE User_Type SET password = '" + newpass + "' WHERE EmployeeID IN(SELECT ID FROM Employee) AND username =  '" + username + "'   ;";
+            object p = dbMan.ExecuteScalarQuery(query);
+
+
+        }
+
+        public void CreateNormalAccount(string username, string password, string ID)
+        {
+            string test1 = "SELECT EmployeeID FROM User_Type  WHERE EmployeeID = '" + ID + "'; "; //First test if the ID is already signed up
+            object flag1 = dbMan.ExecuteScalarQuery(test1);
+
+            if (flag1 != null)
+            {
+                MessageBox.Show(" You are already signed in !");
+                return;
+
+            }
+
+            string test2 = " SELECT ID FROM  Employee WHERE ID = '" + ID + "'; "; //Second test if the ID is not in the company
+            object flag2 = dbMan.ExecuteScalarQuery(test2);
+            if (flag2 == null)
+            {
+                MessageBox.Show(" You are not working here !");
+                return;
+
+
+            }
+            //Now we can gurantee that this ID is for an empolyee in the store and didn't register before.
+            string query = " INSERT INTO User_Type (username, password , type , EmployeeID) " +
+                           " Values ( '" + username + "' , '" + password + "' , 3 , '" + ID + "' ); ";
+            object p = dbMan.ExecuteScalarQuery(query);
+
+        }
+
 
         public int InsertEmployee(string ID, string E_Fname, string E_Lname, string E_City, string E_Street, string E_State, int St_Hours, string St_ID, string Super_ID)
         {

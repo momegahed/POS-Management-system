@@ -49,3 +49,4 @@ C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualW
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalemployees.resources
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalsales.resources
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.GenerateResource.Cache
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
