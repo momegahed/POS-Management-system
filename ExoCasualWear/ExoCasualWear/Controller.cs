@@ -132,5 +132,17 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
+        public DataTable getSups() // to get all suppliers names and IDs
+        {
+            string query = "SELECT Supplier.Su_Fname , Supplier.Su_Lname, SupplierID# FROM Supplier;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public DataTable getItem(Int64 ItemNum) //to get item no,detailsmprice,1,discount 
+        {
+            string query = "SELECT" + ItemNum + " AS itemnumber , Item_discription AS ItemDiscription , Price AS price,Store# AS Quantity ,Value AS discount  From Items , Store, Offer WHERE Store# = 1 AND Items.OfID=OfferID ;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
     }
 }
