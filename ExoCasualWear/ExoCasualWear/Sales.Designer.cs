@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.barcodeentrytextbox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.printbutton = new System.Windows.Forms.Button();
-            this.minusbutton = new System.Windows.Forms.Button();
-            this.plusbutton = new System.Windows.Forms.Button();
             this.itemnumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barcodeentrytextbox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.printbutton = new System.Windows.Forms.Button();
+            this.minusbutton = new System.Windows.Forms.Button();
+            this.plusbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +58,31 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // itemnumber
+            // 
+            this.itemnumber.HeaderText = "ItemNo";
+            this.itemnumber.Name = "itemnumber";
+            // 
+            // ItemDescription
+            // 
+            this.ItemDescription.HeaderText = "Item Name";
+            this.ItemDescription.Name = "ItemDescription";
+            // 
+            // price
+            // 
+            this.price.HeaderText = "Price";
+            this.price.Name = "price";
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            // 
+            // discount
+            // 
+            this.discount.HeaderText = "Discount";
+            this.discount.Name = "discount";
+            // 
             // barcodeentrytextbox
             // 
             this.barcodeentrytextbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -68,6 +93,8 @@
             this.barcodeentrytextbox.Name = "barcodeentrytextbox";
             this.barcodeentrytextbox.Size = new System.Drawing.Size(378, 45);
             this.barcodeentrytextbox.TabIndex = 1;
+            this.barcodeentrytextbox.TextChanged += new System.EventHandler(this.barcodeentrytextbox_TextChanged);
+            this.barcodeentrytextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.barcodeentrytextbox_KeyDown);
             // 
             // label1
             // 
@@ -117,31 +144,6 @@
             this.plusbutton.TabIndex = 3;
             this.plusbutton.UseVisualStyleBackColor = true;
             this.plusbutton.Click += new System.EventHandler(this.plusbutton_Click);
-            // 
-            // itemnumber
-            // 
-            this.itemnumber.HeaderText = "ItemNo";
-            this.itemnumber.Name = "itemnumber";
-            // 
-            // ItemDescription
-            // 
-            this.ItemDescription.HeaderText = "Item Name";
-            this.ItemDescription.Name = "ItemDescription";
-            // 
-            // price
-            // 
-            this.price.HeaderText = "Price";
-            this.price.Name = "price";
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            // 
-            // discount
-            // 
-            this.discount.HeaderText = "Discount";
-            this.discount.Name = "discount";
             // 
             // Sales
             // 
