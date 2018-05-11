@@ -12,7 +12,7 @@ namespace ExoCasualWear
 {
     public partial class memberdetails : Form
     {
-        Controller c;
+        Controller c = new Controller();
         public memberdetails()
         {
             InitializeComponent();
