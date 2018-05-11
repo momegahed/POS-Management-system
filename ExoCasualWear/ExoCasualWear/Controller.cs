@@ -138,9 +138,9 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
-        public DataTable ItemProfile(Int64 ItemNum) //to get item no,detailsmprice,1,discount 
+        public DataTable getItem(Int64 ItemNum) //to get item no,detailsmprice,1,discount 
         {
-            string query = "SELECT" + ItemNum + ", Item_discription,Price,Store# AS Quantity ,Value AS discount  From Items , Store, Offer WHERE Store# = 1 AND Items.OfID=OfferID ;";
+            string query = "SELECT" + ItemNum + " AS itemnumber , Item_discription AS ItemDiscription , Price AS price,Store# AS Quantity ,Value AS discount  From Items , Store, Offer WHERE Store# = 1 AND Items.OfID=OfferID ;";
             return dbMan.ExecuteTableQuery(query);
         }
 
