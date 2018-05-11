@@ -11,7 +11,8 @@ namespace ExoCasualWear
 {
     public class DBManager
     {
-        static string DB_Connection_String = @"Data Source=DESKTOP-Q52ELKH\SQLEXPRESS;Initial Catalog=CstoreTest1;Integrated Security=True";
+        static string DB_Connection_String = ConfigurationManager.ConnectionStrings["ExoCasualWearConnectionString"].ConnectionString;
+        //static string DB_Connection_String = @"Data Source=DESKTOP-Q52ELKH\SQLEXPRESS;Initial Catalog=CstoreTest1;Integrated Security=True";
         SqlConnection myConnection;
         
         
