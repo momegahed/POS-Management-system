@@ -22,14 +22,13 @@ namespace ExoCasualWear
         {
             dataGridView2.DataSource = c.itemNotsold(itemidtextbox.Text);
             dataGridView2.Refresh();
-            dataGridView1.DataSource = c.MostSoldItemPerStore();
-            dataGridView1.Refresh();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = c.MostSoldItemPerStore();
             dataGridView1.Refresh();
         }
+
     }
 }
