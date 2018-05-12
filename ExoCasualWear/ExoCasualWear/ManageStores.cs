@@ -12,7 +12,7 @@ namespace ExoCasualWear
 {
     public partial class ManageStores : Form
     {
-        int IDe;
+         int IDe;
 
         public ManageStores()
         {
@@ -24,6 +24,11 @@ namespace ExoCasualWear
            
         }
 
+        public Int32 Get_ID()
+        {
+            return IDe;
+        }
+
         private void Add_Click(object sender, EventArgs e)
         {
             addstore ads = new addstore();
@@ -32,12 +37,8 @@ namespace ExoCasualWear
 
         private void Edit_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Remove_Click(object sender, EventArgs e)
-        {
-            
+            EditStore ES = new EditStore(this.IDe);
+            ES.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -45,6 +46,14 @@ namespace ExoCasualWear
             int i = dataGridView1.CurrentRow.Index;
              IDe = Int32.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
              ID.Text = IDe.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Controller c = new Controller();
+            DataTable dt = c.Store_Details();
+            dataGridView1.DataSource = dt;
+            dataGridView1.Refresh();
         }
 
 

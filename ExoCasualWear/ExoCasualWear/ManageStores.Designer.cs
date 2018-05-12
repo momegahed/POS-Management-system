@@ -30,16 +30,16 @@
         {
             this.Add = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
-            this.Remove = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(105, 127);
+            this.Add.Location = new System.Drawing.Point(95, 127);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(107, 40);
             this.Add.TabIndex = 0;
@@ -57,16 +57,6 @@
             this.Edit.UseVisualStyleBackColor = true;
             this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
-            // Remove
-            // 
-            this.Remove.Location = new System.Drawing.Point(411, 127);
-            this.Remove.Name = "Remove";
-            this.Remove.Size = new System.Drawing.Size(107, 40);
-            this.Remove.TabIndex = 2;
-            this.Remove.Text = "Remove Store";
-            this.Remove.UseVisualStyleBackColor = true;
-            this.Remove.Click += new System.EventHandler(this.Remove_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -82,7 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(207, 81);
+            this.label1.Location = new System.Drawing.Point(173, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 7;
@@ -90,20 +80,30 @@
             // 
             // ID
             // 
-            this.ID.Location = new System.Drawing.Point(281, 78);
+            this.ID.Location = new System.Drawing.Point(247, 83);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(166, 20);
             this.ID.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(426, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 40);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ManageStores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 407);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Remove);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.Add);
             this.Name = "ManageStores";
@@ -118,9 +118,9 @@
 
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button Edit;
-        private System.Windows.Forms.Button Remove;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ID;
+        private System.Windows.Forms.Button button1;
     }
 }

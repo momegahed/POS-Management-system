@@ -215,6 +215,20 @@ namespace ExoCasualWear
             return dbMan.UpdateData(query);
         }
 
+        public int AddStore(Int32 ID, Int16 Ohours, string City, string Street, string State)
+        {
+            string query = "INSERT INTO Store( Store#, Operating_hours, St_City, St_Street, St_State)" +
+                             "Values ('" + ID + "','" + Ohours  + "','" + City + "','" + Street + "','" + State + "');";
+
+            return dbMan.UpdateData(query);
+        }
+
+        public DataTable Store_Details()
+        {
+            string query = "SELECT Store#, Operating_hours, St_City, St_Street, St_State FROM Store;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
 
         public DataTable getSups() // to get all suppliers names and IDs
         {
@@ -270,20 +284,48 @@ namespace ExoCasualWear
             return Int32.Parse(dbMan.UpdateData(query).ToString());
         }
 
-
-        public int AddStore(Int32 ID, Int16 Ohours, string City, string Street, string State)
+        public int editStore(Int32 ID, Int16 Ohours, string City, string Street, string State)
         {
-            string query = "INSERT INTO Store( Store#, Operating_hours, St_City, St_Street, St_State)" +
-                             "Values ('" + ID + "','" + Ohours  + "','" + City + "','" + Street + "','" + State + "');";
+            string query = "UPDATE Store SET Operating_hours = '" + Ohours + "', St_City = '" + City + "', St_Street = '" + Street + "' , St_State = '" + State + "'Where Store# =" + ID + ";";
+            return dbMan.UpdateData(query);
+        }
+
+        //shawkyyyyyyyy
+        public DataTable EmployeeProfile(int EmpID)
+        {
+            string query = "SELECT E.ID, E.E_Fname, E.E_Lname, E.E_City, E.E_Street, E.E_State AS E_governorate, E.St_Hours AS Work_Hours, store.St_City AS Store_City, store.St_State AS Store_governorate, S.E_Fname AS Supervisor_Fname, S.E_Lname AS Supervisor_Lname FROM Employee AS E,Employee AS S, Store WHERE E.ID=" + EmpID + " AND E.SuperID=S.ID AND E.St_ID=Store#;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+        //Function to get all items and their info
+        public DataTable Items_List()
+        {
+            string query = "SELECT ItemNO#, Item_discription, Item_detailed_discription, Price, Category, Brand, O_Start AS Offer_start_date, O_End AS Offer_end_date, Value AS Offer_value FROM Items, Offer WHERE Items.OfID=OfferID;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public int Edit_Item(Int64 ItemNO, string Item_discription, string Item_detailed_discription, double Price, string Category, string Brand, int OfID)
+        {
+            string query = "UPDATE Items SET Item_discription='" + Item_discription + "', Item_detailed_discription='" + Item_detailed_discription + "', Price=" + Price + ", Category='" + Category + "', Brand='" + Brand + "', OfID=" + OfID + " WHERE ItemNO#=" + ItemNO + " ;";
 
             return dbMan.UpdateData(query);
         }
 
-        public DataTable Store_Details()
+        public DataTable Employees_List()
         {
-            string query = "SELECT Store#, Operating_hours, St_City, St_Street, St_State FROM Store;";
+            string query = "SELECT E.ID, E.E_Fname, E.E_Lname, E.E_City, E.E_Street, E.E_State AS E_governorate, E.St_Hours AS Work_Hours, store.St_City AS Store_City, store.St_State AS Store_governorate, S.E_Fname AS Supervisor_Fname, S.E_Lname AS Supervisor_Lname FROM Employee AS E,Employee AS S, Store WHERE E.SuperID=S.ID AND E.St_ID=Store#;";
             return dbMan.ExecuteTableQuery(query);
         }
 
+        public DataTable CustomerProfile(int CustID)
+        {
+            string query = "SELECT MembershipID#, C_Fname, C_Lname, C_Phone#, SUM(Total_price) AS Total_cutomer_purchases FROM Customer,Receipt WHERE MemID#=MembershipID# AND MembershipID#=" + CustID + " GROUP BY MembershipID#, C_Fname, C_Lname, C_Phone#;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public DataTable Customers_List()
+        {
+            string query = "SELECT MembershipID#, C_Fname, C_Lname, C_Phone#, SUM(Total_price) AS Total_cutomer_purchases FROM Customer,Receipt WHERE MemID#=MembershipID# GROUP BY MembershipID#, C_Fname, C_Lname, C_Phone#;";
+            return dbMan.ExecuteTableQuery(query);
+        }
     }
 }

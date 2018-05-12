@@ -70,8 +70,6 @@
       <DependentUpon>addshipment.cs</DependentUpon>
     </Compile>
     <Compile Include="AddUser.cs">
-<<<<<<< HEAD
-=======
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddUser.Designer.cs">
@@ -91,32 +89,35 @@
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="forgetpass.cs">
->>>>>>> 7ecc741405bf863bef233fe55c481a80f31053ed
+    <Compile Include="EditStore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddUser.Designer.cs">
-      <DependentUpon>AddUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChangeUserType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChangeUserType.Designer.cs">
-      <DependentUpon>ChangeUserType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controller.cs" />
-    <Compile Include="DBManager.cs" />
-    <Compile Include="DeleteUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteUser.Designer.cs">
-      <DependentUpon>DeleteUser.cs</DependentUpon>
+    <Compile Include="EditStore.Designer.cs">
+      <DependentUpon>EditStore.cs</DependentUpon>
     </Compile>
     <Compile Include="forgetpass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forgetpass.Designer.cs">
       <DependentUpon>forgetpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addsupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addsupplier.Designer.cs">
+      <DependentUpon>addsupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstore.Designer.cs">
+      <DependentUpon>addstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStores.Designer.cs">
+      <DependentUpon>ManageStores.cs</DependentUpon>
     </Compile>
     <Compile Include="itemdetails.cs">
       <SubType>Form</SubType>
@@ -186,6 +187,12 @@
     <Compile Include="Sign_up.Designer.cs">
       <DependentUpon>Sign_up.cs</DependentUpon>
     </Compile>
+    <Compile Include="Supplier Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier Details.Designer.cs">
+      <DependentUpon>Supplier Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="totalemployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,8 +214,6 @@
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-=======
     <EmbeddedResource Include="addshipment.resx">
       <DependentUpon>addshipment.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,10 +232,12 @@
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditStore.resx">
+      <DependentUpon>EditStore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageStores.resx">
       <DependentUpon>ManageStores.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> 7ecc741405bf863bef233fe55c481a80f31053ed
     <EmbeddedResource Include="itemdetails.resx">
       <DependentUpon>itemdetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="shipmentdetails.resx">
       <DependentUpon>shipmentdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier Details.resx">
+      <DependentUpon>Supplier Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="totalemployees.resx">
       <DependentUpon>totalemployees.cs</DependentUpon>
