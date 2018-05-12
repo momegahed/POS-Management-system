@@ -75,6 +75,7 @@ C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualW
 C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ManageStores.resources
 C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addshipment.resources
 C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addstore.resources
+<<<<<<< HEAD
 C:\Users\Ahmed Wael\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
 C:\Users\Ahmed Wael\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addcustomer.resources
 C:\Users\Ahmed Wael\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addemployee.resources
@@ -93,3 +94,13 @@ C:\Users\Ahmed Wael\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCa
 C:\Users\Ahmed Wael\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.CoreCompileInputs.cache
 C:\Users\Ahmed Wael\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
 C:\Users\Ahmed Wael\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.pdb
+=======
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addshipment.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addstore.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addsupplier.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ManageStores.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_Details.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.AddUser.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ChangeUserType.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.DeleteUser.resources
+>>>>>>> 7ecc741405bf863bef233fe55c481a80f31053ed

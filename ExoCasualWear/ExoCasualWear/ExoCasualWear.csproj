@@ -70,6 +70,29 @@
       <DependentUpon>addshipment.cs</DependentUpon>
     </Compile>
     <Compile Include="AddUser.cs">
+<<<<<<< HEAD
+=======
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeUserType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeUserType.Designer.cs">
+      <DependentUpon>ChangeUserType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpass.cs">
+>>>>>>> 7ecc741405bf863bef233fe55c481a80f31053ed
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddUser.Designer.cs">
@@ -184,6 +207,30 @@
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="addshipment.resx">
+      <DependentUpon>addshipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstore.resx">
+      <DependentUpon>addstore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addsupplier.resx">
+      <DependentUpon>addsupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeUserType.resx">
+      <DependentUpon>ChangeUserType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStores.resx">
+      <DependentUpon>ManageStores.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 7ecc741405bf863bef233fe55c481a80f31053ed
     <EmbeddedResource Include="itemdetails.resx">
       <DependentUpon>itemdetails.cs</DependentUpon>
     </EmbeddedResource>

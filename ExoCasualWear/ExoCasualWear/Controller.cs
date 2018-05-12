@@ -21,7 +21,7 @@ namespace ExoCasualWear
         public int CheckPassword(string username, string password)
         {
             //Query the DB to check for username/password
-            string query = "SELECT type, ID FROM User_Type, Employee WHERE   ID=EmployeeID AND username = '" + username + "' AND password = '" + password + "' ;";
+            string query = "SELECT  ID FROM User_Type, Employee WHERE   ID=EmployeeID AND username = '" + username + "' AND password = '" + password + "' ;";
             object p = dbMan.ExecuteScalarQuery(query);
             if (p == null)
                 return 0;
