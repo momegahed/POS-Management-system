@@ -114,13 +114,14 @@ P_Option VARCHAR(15) NOT NULL CHECK (P_Option IN ('Cash' , 'Visa', 'Mastercard' 
 PRIMARY KEY (StoreID, P_Option),
 FOREIGN KEY (StoreID) REFERENCES Store ); 
 
-CREATE TABLE [dbo].[User_Type] (
-[username]   VARCHAR (50) NULL,
-[password]   VARCHAR (50) NULL,
-[type]       INT          NULL,
-[EmployeeID] INT     NOT NULL,
-CONSTRAINT [PK_User_Type_1] PRIMARY KEY CLUSTERED ([EmployeeID] ASC),
-CONSTRAINT [FK_Employee_User_Type] FOREIGN KEY ([EmployeeID]) REFERENCES [dbo].[Employee] ([ID]));
+CREATE TABLE User_Type (
+username   VARCHAR (50) NOT NULL,
+password   VARCHAR (50) NOT NULL,
+type       VARCHAR (50) NOT NULL CHECK (type IN ('Admin' , 'Branch Manager', 'Sales Assistant')),
+EmployeeID INT     NOT NULL,
+Security   VARCHAR (50),
+PRIMARY KEY CLUSTERED (EmployeeID ASC),
+FOREIGN KEY (EmployeeID) REFERENCES Employee );
 
 INSERT INTO Store VALUES('1','14','Shibin Al-Kawm','Omar Afandy','Menofia');
 INSERT INTO Store VALUES('2','14','Tanta','Gamal Abdelnaser','Gharbia');
@@ -284,4 +285,4 @@ INSERT INTO R_Contains VALUES('2','10','1','230','0');
 INSERT INTO R_Contains VALUES('3','10','2','160','0');
 INSERT INTO R_Contains VALUES('2','10','4','250','0');
 
-insert into User_Type values ('admin','admin','3','1');
+insert into User_Type values ('admin','admin','Admin','1',NULL);
