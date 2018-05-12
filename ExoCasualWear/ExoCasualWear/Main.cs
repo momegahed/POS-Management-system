@@ -115,5 +115,11 @@ namespace ExoCasualWear
             Supplier_Details supd = new Supplier_Details();
             supd.Show();
         }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageStores mgs = new ManageStores();
+            mgs.Show();
+        }
     }
 }

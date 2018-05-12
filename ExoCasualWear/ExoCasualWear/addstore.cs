@@ -10,21 +10,20 @@ using System.Windows.Forms;
 
 namespace ExoCasualWear
 {
-    public partial class addshipment : Form
+    public partial class addstore : Form
     {
-        public addshipment()
+        public addstore()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Add_Click(object sender, EventArgs e)
         {
-
+            Controller c = new Controller();
+            c.AddStore(Int32.Parse(ID.Text), Int16.Parse(OH.Text), City.Text, Street.Text, State.Text);
+            this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

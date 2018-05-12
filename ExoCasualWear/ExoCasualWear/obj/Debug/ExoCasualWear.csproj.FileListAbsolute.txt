@@ -72,3 +72,6 @@ C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualW
 C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.pdb
 C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addsupplier.resources
 C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_Details.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ManageStores.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addshipment.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addstore.resources

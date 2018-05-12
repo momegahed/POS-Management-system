@@ -146,5 +146,18 @@ namespace ExoCasualWear
             return dbMan.UpdateData(query);
         }
 
+        public int AddStore(Int32 ID, Int16 Ohours, string City, string Street, string State)
+        {
+            string query = "INSERT INTO Store( Store#, Operating_hours, St_City, St_Street, St_State)" +
+                             "Values ('" + ID + "','" + Ohours  + "','" + City + "','" + Street + "','" + State + "');";
+
+            return dbMan.UpdateData(query);
+        }
+
+        public DataTable Store_Details()
+        {
+            string query = "SELECT Store#, Operating_hours, St_City, St_Street, St_State FROM Store;";
+            return dbMan.ExecuteTableQuery(query);
+        }
     }
 }

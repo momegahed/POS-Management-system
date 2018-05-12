@@ -83,6 +83,18 @@
     <Compile Include="addsupplier.Designer.cs">
       <DependentUpon>addsupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="addstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstore.Designer.cs">
+      <DependentUpon>addstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStores.Designer.cs">
+      <DependentUpon>ManageStores.cs</DependentUpon>
+    </Compile>
     <Compile Include="itemdetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,8 +184,17 @@
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addshipment.resx">
+      <DependentUpon>addshipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstore.resx">
+      <DependentUpon>addstore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addsupplier.resx">
       <DependentUpon>addsupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStores.resx">
+      <DependentUpon>ManageStores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="itemdetails.resx">
       <DependentUpon>itemdetails.cs</DependentUpon>
