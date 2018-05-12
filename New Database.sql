@@ -103,7 +103,7 @@ Quantity INT NOT NULL CHECK (Quantity > 0),
 ReceiptID BIGINT NOT NULL,
 Item#No BIGINT NOT NULL,
 Price SMALLMONEY NOT NULL,
-Discount int,
+Discount decimal(3,2),
 PRIMARY KEY (ReceiptID, Item#No),
 FOREIGN KEY (ReceiptID) REFERENCES Receipt ,
 FOREIGN KEY (Item#No) REFERENCES Items ON UPDATE CASCADE );

@@ -249,7 +249,7 @@ namespace ExoCasualWear
             return dbMan.UpdateData(query);
         }
 
-        public int fillR(Int64 RID, int EmpID, Int64 ItemNum, int price, int descount, int quantity) //to fill data inside specific recipt (R_contain table)
+        public int fillR(Int64 RID, int EmpID, Int64 ItemNum, string price, double descount, int quantity) //to fill data inside specific recipt (R_contain table)
         {
             string query = "INSERT INTO R_contains " +
                             "Values ('" + quantity + "','" + RID + "','" + ItemNum + "','" + price + "','" + descount + "');" +
