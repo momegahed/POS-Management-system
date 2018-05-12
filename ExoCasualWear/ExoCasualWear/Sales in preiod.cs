@@ -25,7 +25,7 @@ namespace ExoCasualWear
              dataGridView1.Refresh();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int i = dataGridView1.CurrentRow.Index;
             Int32 IDe = Int32.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());

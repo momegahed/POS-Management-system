@@ -330,7 +330,7 @@ namespace ExoCasualWear
 
         public DataTable Shipments_List()
         {
-            string query = "SELECT ShipmentID#, Sh_Date, Supplier.Su_Fname, Supplier.Su_Lname, Supplier.Su_Phone#, Supply_Store.ItemsNum AS ID_Of_Supplied_Item, Supply_Store.StoreID AS ID_Of_Supplied_Store, Supply_Store.Quantity, Items.Item_discription, Items.Price, Offer.Value FROM Shipment, Supplier, Supply_Store, Items, Offer WHERE Shipment.SupID#=Supplier.SupplierID# AND Supply_Store.ShipID=Shipment.ShipmentID# AND Supply_Store.ItemsNum=Items.ItemNO# AND Items.OfID=Offer.OfferID;";
+            string query = "SELECT ShipmentID#, Sh_Date, Supplier.Su_Fname, Supplier.Su_Lname, Supplier.Su_Phone#, Supply_Store.StoreID AS ID_Of_Supplied_Store FROM Shipment, Supplier, Supply_Store WHERE Shipment.SupID#=Supplier.SupplierID# AND Supply_Store.ShipID=Shipment.ShipmentID#;";
             return dbMan.ExecuteTableQuery(query);
         }
 
@@ -345,6 +345,6 @@ namespace ExoCasualWear
         {
             string query = "SELECT Item#No AS Item_Number, Item_discription, Quantity , R_Contains.Price ,Discount FROM R_Contains, Receipt, Items WHERE Receipt# =" + ID + " AND Receipt#=ReceiptID AND Item#No=ItemNO#;";
             return dbMan.ExecuteTableQuery(query);
-        }
+        }   
     }
 }
