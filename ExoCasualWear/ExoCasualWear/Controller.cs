@@ -146,7 +146,6 @@ namespace ExoCasualWear
             return dbMan.UpdateData(query);
         }
 
-<<<<<<< HEAD
         public int AddStore(Int32 ID, Int16 Ohours, string City, string Street, string State)
         {
             string query = "INSERT INTO Store( Store#, Operating_hours, St_City, St_Street, St_State)" +
@@ -160,7 +159,7 @@ namespace ExoCasualWear
             string query = "SELECT Store#, Operating_hours, St_City, St_Street, St_State FROM Store;";
             return dbMan.ExecuteTableQuery(query);
         }
-=======
+
         public DataTable getSups() // to get all suppliers names and IDs
         {
             string query = "SELECT Supplier.Su_Fname , Supplier.Su_Lname, SupplierID# FROM Supplier;";
@@ -215,6 +214,5 @@ namespace ExoCasualWear
             return Int32.Parse(dbMan.UpdateData(query).ToString());
         }
 
->>>>>>> master
     }
 }
