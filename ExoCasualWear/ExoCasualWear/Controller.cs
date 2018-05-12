@@ -284,6 +284,12 @@ namespace ExoCasualWear
             return Int32.Parse(dbMan.UpdateData(query).ToString());
         }
 
+        public int editStore(Int32 ID, Int16 Ohours, string City, string Street, string State)
+        {
+            string query = "UPDATE Store SET Operating_hours = '" + Ohours + "', St_City = '" + City + "', St_Street = '" + Street + "' , St_State = '" + State + "'Where Store# =" + ID + ";";
+            return dbMan.UpdateData(query);
+        }
+
 
     }
 }

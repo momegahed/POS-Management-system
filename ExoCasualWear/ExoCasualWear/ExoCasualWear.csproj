@@ -89,6 +89,12 @@
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStore.Designer.cs">
+      <DependentUpon>EditStore.cs</DependentUpon>
+    </Compile>
     <Compile Include="forgetpass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStore.resx">
+      <DependentUpon>EditStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageStores.resx">
       <DependentUpon>ManageStores.cs</DependentUpon>
