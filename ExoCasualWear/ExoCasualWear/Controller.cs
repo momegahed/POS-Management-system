@@ -144,12 +144,47 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
-        public int fillship(Int64 ItemNum , int StoreID, int C_Lname, string C_Phone) //to fill data inside shipment
+        public int fillship(Int64 ItemNum , int StoreID, int ShipID, int quantity) //to fill data inside shipment (supplystore Table)
         {
-            string query = "INSERT INTO Customer (MembershipID#, C_Fname, C_Lname, C_Phone#)" +
-                            "Values ('" + MembershipID + "','" + C_Fname + "','" + C_Lname + "','" + C_Phone + "');";
+            string query = "INSERT INTO Supply_Store " +
+                            "Values ('" + ItemNum + "','" + StoreID + "','" + ShipID + "','" + quantity + "');";
+            return dbMan.UpdateData(query);
+        }
+
+        public int fillR(Int64 RID, int EmpID, Int64 ItemNum, int price, int descount, int quantity) //to fill data inside specific recipt (R_contain table)
+        {
+            string query = "INSERT INTO R_contains " +
+                            "Values ('" + quantity + "','" + RID + "','" + ItemNum + "','" + price + "','" + descount + "');" +
+                           " UPDATE SoldAt SET Available = (SELECT Available FROM SoldAt AS OLDSoldAt WHERE SoldAt.ItemsNumber=OLDSoldAt.ItemsNumber AND SoldAt.StID=OLDSoldAt.StID)-" + quantity + " WHERE ItemsNumber='" + ItemNum + "' AND StID=(SELECT St_ID FROM Employee WHERE ID = '" + EmpID + "');"+
+                           " UPDATE SoldAt SET Sold = (SELECT Sold FROM SoldAt AS OLDSoldAt WHERE SoldAt.ItemsNumber=OLDSoldAt.ItemsNumber AND SoldAt.StID=OLDSoldAt.StID)+" + quantity + " WHERE ItemsNumber='" + ItemNum + "' AND StID=(SELECT St_ID FROM Employee WHERE ID = '" + EmpID + "');";
 
             return dbMan.UpdateData(query);
         }
+         //Function to auto generate the number od the reciept to be issued 
+        public Int64 Receipt_AG() 
+        {
+            string query = " SELECT Count(Receipt#) AS AGReceiptNum FROM Receipt";
+            return Int64.Parse(dbMan.ExecuteScalarQuery(query).ToString());
+        }
+
+
+        //function to create a new receipt
+        public int CreateNewReceipt(Int64 ID, Double Total_price, Double Discount_price, int MemID, int Em_ID)
+        {
+            string query = "INSERT INTO Receipt (Receipt#, Total_price, Discount_price, R_Time, R_Date, MemID#, Em_ID) " +
+                            "Values ('" + ID + "','" + Total_price + "','" + Discount_price + "','" + DateTime.Now.TimeOfDay + "','" + DateTime.Now.Date + "','" + MemID + "','" + Em_ID + "');";
+
+            return Int32.Parse(dbMan.UpdateData(query).ToString());
+        }
+
+        //function to create a new shipment
+        public int CreateNewShip(int ID, int SupID)
+        {
+            string query = "INSERT INTO Shipment (ShipmentID#, Sh_Date, SupID#) " +
+                            "Values ('" + ID + "','" + DateTime.Now.Date + "','" + SupID + "');";
+
+            return Int32.Parse(dbMan.UpdateData(query).ToString());
+        }
+
     }
 }
