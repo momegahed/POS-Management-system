@@ -22,9 +22,9 @@ namespace ExoCasualWear
         private void Btn_signup_Click(object sender, EventArgs e)
         {
             controllerObj = new Controller();
-            controllerObj.CreateNormalAccount(TxtBx_username.Text, TxtBx_pass.Text,TxtBx_ID.Text);
-            Main mainform = new Main();
+            controllerObj.CreateNormalAccount(TxtBx_username.Text, TxtBx_pass.Text,TxtBx_ID.Text,TxtBx_Security.Text);
             this.Hide();
+            Main mainform = new Main();
             mainform.Show();
 
 

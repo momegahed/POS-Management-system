@@ -33,12 +33,14 @@
             this.Btn_confirmpass = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtBx_username2 = new System.Windows.Forms.TextBox();
+            this.TxtBx_Security = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(270, 29);
+            this.label1.Location = new System.Drawing.Point(47, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 17);
             this.label1.TabIndex = 0;
@@ -46,7 +48,7 @@
             // 
             // TxtBx_newpass
             // 
-            this.TxtBx_newpass.Location = new System.Drawing.Point(252, 73);
+            this.TxtBx_newpass.Location = new System.Drawing.Point(349, 215);
             this.TxtBx_newpass.Name = "TxtBx_newpass";
             this.TxtBx_newpass.Size = new System.Drawing.Size(197, 22);
             this.TxtBx_newpass.TabIndex = 1;
@@ -54,7 +56,7 @@
             // 
             // Btn_confirmpass
             // 
-            this.Btn_confirmpass.Location = new System.Drawing.Point(148, 116);
+            this.Btn_confirmpass.Location = new System.Drawing.Point(258, 263);
             this.Btn_confirmpass.Name = "Btn_confirmpass";
             this.Btn_confirmpass.Size = new System.Drawing.Size(137, 31);
             this.Btn_confirmpass.TabIndex = 2;
@@ -65,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 29);
+            this.label2.Location = new System.Drawing.Point(47, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 17);
             this.label2.TabIndex = 3;
@@ -73,17 +75,35 @@
             // 
             // TxtBx_username2
             // 
-            this.TxtBx_username2.Location = new System.Drawing.Point(29, 74);
+            this.TxtBx_username2.Location = new System.Drawing.Point(349, 60);
             this.TxtBx_username2.Name = "TxtBx_username2";
-            this.TxtBx_username2.Size = new System.Drawing.Size(139, 22);
+            this.TxtBx_username2.Size = new System.Drawing.Size(197, 22);
             this.TxtBx_username2.TabIndex = 4;
             this.TxtBx_username2.TextChanged += new System.EventHandler(this.TxtBx_username2_TextChanged);
+            // 
+            // TxtBx_Security
+            // 
+            this.TxtBx_Security.Location = new System.Drawing.Point(349, 130);
+            this.TxtBx_Security.Name = "TxtBx_Security";
+            this.TxtBx_Security.Size = new System.Drawing.Size(197, 22);
+            this.TxtBx_Security.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(47, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(190, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "What is your favourite food ?";
             // 
             // forgetpass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 181);
+            this.ClientSize = new System.Drawing.Size(651, 342);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.TxtBx_Security);
             this.Controls.Add(this.TxtBx_username2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Btn_confirmpass);
@@ -104,5 +124,7 @@
         private System.Windows.Forms.Button Btn_confirmpass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtBx_username2;
+        private System.Windows.Forms.TextBox TxtBx_Security;
+        private System.Windows.Forms.Label label3;
     }
 }
