@@ -82,6 +82,18 @@
       <DependentUpon>ChangeUserType.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller.cs" />
+    <Compile Include="Customer List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer List.Designer.cs">
+      <DependentUpon>Customer List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Profile.Designer.cs">
+      <DependentUpon>Customer Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBManager.cs" />
     <Compile Include="DeleteUser.cs">
       <SubType>Form</SubType>
@@ -89,11 +101,29 @@
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Item.Designer.cs">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditStore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditStore.Designer.cs">
       <DependentUpon>EditStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Profile.Designer.cs">
+      <DependentUpon>Employee Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees List.Designer.cs">
+      <DependentUpon>Employees List.cs</DependentUpon>
     </Compile>
     <Compile Include="forgetpass.cs">
       <SubType>Form</SubType>
@@ -112,6 +142,12 @@
     </Compile>
     <Compile Include="addstore.Designer.cs">
       <DependentUpon>addstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item List.Designer.cs">
+      <DependentUpon>Item List.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageStores.cs">
       <SubType>Form</SubType>
@@ -169,6 +205,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales in preiod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales in preiod.Designer.cs">
+      <DependentUpon>Sales in preiod.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +223,12 @@
     <Compile Include="shipmentdetails.Designer.cs">
       <DependentUpon>shipmentdetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shippment List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shippment List.Designer.cs">
+      <DependentUpon>Shippment List.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sign_up.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +240,12 @@
     </Compile>
     <Compile Include="Supplier Details.Designer.cs">
       <DependentUpon>Supplier Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier list.Designer.cs">
+      <DependentUpon>Supplier list.cs</DependentUpon>
     </Compile>
     <Compile Include="totalemployees.cs">
       <SubType>Form</SubType>
@@ -229,11 +283,29 @@
     <EmbeddedResource Include="ChangeUserType.resx">
       <DependentUpon>ChangeUserType.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer List.resx">
+      <DependentUpon>Customer List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Profile.resx">
+      <DependentUpon>Customer Profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Edit Item.resx">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditStore.resx">
       <DependentUpon>EditStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Profile.resx">
+      <DependentUpon>Employee Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees List.resx">
+      <DependentUpon>Employees List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item List.resx">
+      <DependentUpon>Item List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageStores.resx">
       <DependentUpon>ManageStores.cs</DependentUpon>
@@ -263,14 +335,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sales in preiod.resx">
+      <DependentUpon>Sales in preiod.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sales.resx">
       <DependentUpon>Sales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="shipmentdetails.resx">
       <DependentUpon>shipmentdetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Shippment List.resx">
+      <DependentUpon>Shippment List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier Details.resx">
       <DependentUpon>Supplier Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier list.resx">
+      <DependentUpon>Supplier list.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="totalemployees.resx">
       <DependentUpon>totalemployees.cs</DependentUpon>

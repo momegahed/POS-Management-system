@@ -327,5 +327,19 @@ namespace ExoCasualWear
             string query = "SELECT MembershipID#, C_Fname, C_Lname, C_Phone#, SUM(Total_price) AS Total_cutomer_purchases FROM Customer,Receipt WHERE MemID#=MembershipID# GROUP BY MembershipID#, C_Fname, C_Lname, C_Phone#;";
             return dbMan.ExecuteTableQuery(query);
         }
+
+        public DataTable Shipments_List()
+        {
+            string query = "SELECT ShipmentID#, Sh_Date, Supplier.Su_Fname, Supplier.Su_Lname, Supplier.Su_Phone#, Supply_Store.ItemsNum AS ID_Of_Supplied_Item, Supply_Store.StoreID AS ID_Of_Supplied_Store, Supply_Store.Quantity, Items.Item_discription, Items.Price, Offer.Value FROM Shipment, Supplier, Supply_Store, Items, Offer WHERE Shipment.SupID#=Supplier.SupplierID# AND Supply_Store.ShipID=Shipment.ShipmentID# AND Supply_Store.ItemsNum=Items.ItemNO# AND Items.OfID=Offer.OfferID;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        //User input the start and end date to this function to get all sales made during this period 
+        public DataTable ItemSold_Period(string StartDate, string EndDate)
+        {
+            string query = "SELECT * FROM Receipt WHERE R_Date>='" + StartDate + "' AND R_Date<='" + EndDate + "';";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
     }
 }

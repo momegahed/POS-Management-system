@@ -132,5 +132,59 @@ namespace ExoCasualWear
             ManageStores mgs = new ManageStores();
             mgs.Show();
         }
+
+        private void employeeProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employee_Profile ep = new Employee_Profile();
+            ep.Show();
+        }
+
+        private void itemsListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Item_List il = new Item_List();
+            il.Show();
+        }
+
+        private void editItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employees_List el = new Employees_List();
+            el.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Customer_List cl = new Customer_List();
+            cl.Show();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Customer_Profile cp = new Customer_Profile();
+            cp.Show();
+        }
+
+        private void suppliersListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Supplier_list sl = new Supplier_list();
+            sl.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Shippment_List shl = new Shippment_List();
+            shl.Show();
+
+        }
+
+        private void salesInPreiodToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sales_in_preiod sp = new Sales_in_preiod();
+            sp.Show();
+        }
     }
 }
