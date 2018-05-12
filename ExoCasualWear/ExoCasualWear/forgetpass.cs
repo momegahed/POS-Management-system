@@ -23,7 +23,7 @@ namespace ExoCasualWear
         private void Btn_confirmpass_Click(object sender, EventArgs e)
         {
             controllerObj = new Controller();
-            controllerObj.ChangePassword(TxtBx_username2.Text,TxtBx_newpass.Text);
+            controllerObj.ChangePassword(TxtBx_username2.Text,TxtBx_newpass.Text, TxtBx_Security.Text);
         }
 
         private void forgetpass_Load(object sender, EventArgs e)

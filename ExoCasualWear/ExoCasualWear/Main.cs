@@ -121,5 +121,11 @@ namespace ExoCasualWear
             ManageStores mgs = new ManageStores();
             mgs.Show();
         }
+
+        private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageUsers mu = new ManageUsers();
+            mu.Show();
+        }
     }
 }

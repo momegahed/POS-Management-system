@@ -21,22 +21,28 @@ namespace ExoCasualWear
         public int CheckPassword(string username, string password)
         {
             //Query the DB to check for username/password
-            string query = "SELECT type, ID FROM User_Type, Employee WHERE   ID=EmployeeID AND username = '" + username + "' AND password = '" + password + "' ;";
+            string query = "SELECT  ID FROM User_Type, Employee WHERE   ID=EmployeeID AND username = '" + username + "' AND password = '" + password + "' ;";
             object p = dbMan.ExecuteScalarQuery(query);
             if (p == null)
                 return 0;
             else return (int)p;
 
         }
-        public void ChangePassword(string username, string newpass)
+        public void ChangePassword(string username, string newpass, string Security)
         {
+            string test = "SELECT Security FROM User_Type WHERE Security = '" + Security + "' AND username = '" + username + "'; ";
+            object flag = dbMan.ExecuteScalarQuery(test);
+            if (flag == null)
+            {
+                MessageBox.Show("Can't reset password");
+            }
             string query = "UPDATE User_Type SET password = '" + newpass + "' WHERE EmployeeID IN(SELECT ID FROM Employee) AND username =  '" + username + "'   ;";
             object p = dbMan.ExecuteScalarQuery(query);
 
 
         }
 
-        public void CreateNormalAccount(string username, string password, string ID)
+        public void CreateNormalAccount(string username, string password, string ID, string Security)
         {
             string test1 = "SELECT EmployeeID FROM User_Type  WHERE EmployeeID = '" + ID + "'; "; //First test if the ID is already signed up
             object flag1 = dbMan.ExecuteScalarQuery(test1);
@@ -58,12 +64,75 @@ namespace ExoCasualWear
 
             }
             //Now we can gurantee that this ID is for an empolyee in the store and didn't register before.
-            string query = " INSERT INTO User_Type (username, password , type , EmployeeID) " +
-                           " Values ( '" + username + "' , '" + password + "' , 3 , '" + ID + "' ); ";
+            string query = " INSERT INTO User_Type (username, password , type , EmployeeID, Security) " +
+                           " Values ( '" + username + "' , '" + password + "' , ' Sales Assistant' , '" + ID + "' , '" + Security + "' ); ";
             object p = dbMan.ExecuteScalarQuery(query);
 
         }
 
+        public void AddUser(string username, string password, string ID, string type, string Security)
+        {
+
+            string test1 = "SELECT EmployeeID FROM User_Type  WHERE EmployeeID = '" + ID + "'; "; //First test if the ID is already signed up
+            object flag1 = dbMan.ExecuteScalarQuery(test1);
+
+            if (flag1 != null)
+            {
+                MessageBox.Show(" The user is already added !");
+                return;
+
+            }
+
+            string test2 = " SELECT ID FROM  Employee WHERE ID = '" + ID + "'; "; //Second test if the ID is not in the company
+            object flag2 = dbMan.ExecuteScalarQuery(test2);
+            if (flag2 == null)
+            {
+                MessageBox.Show(" Error! There is no employee with this ID !");
+                return;
+
+
+            }
+            string test3 = "SELECT username FROM User_Type WHERE username = '" + username + "'; ";
+            object flag3 = dbMan.ExecuteScalarQuery(test3);
+            if (flag3 != null)
+            {
+                MessageBox.Show(" This username is already taken !");
+                return;
+            }
+            string query = " INSERT INTO User_Type (username, password , type , EmployeeID, Security) " +
+                           " Values ( '" + username + "' , '" + password + "' , '" + type + "' , '" + ID + "' , '" + Security + "' ); ";
+            object p = dbMan.ExecuteScalarQuery(query);
+        }
+
+        public void DeleteUser(string username)
+        {
+            string query = "DELETE FROM User_Type WHERE username = '" + username + "' ; ";
+            object p = dbMan.ExecuteScalarQuery(query);
+            MessageBox.Show("Done ! user is deleted.");
+        }
+
+        public void ChangeUserType(string username, string type)
+        {
+            string query = "UPDATE User_Type SET type = '" + type + "' WHERE username = '" + username + "' ; ";
+            object p = dbMan.ExecuteScalarQuery(query);
+            MessageBox.Show("Done ! user type has changed.");
+
+        }
+        public DataTable SelectUsername()
+        {
+            string query = "SELECT  username FROM User_Type;";
+            return dbMan.ExecuteTableQuery(query);
+        }
+        public DataTable SelectUser()
+        {
+            string query = "SELECT username, type, EmployeeID FROM User_Type ";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public void TerminateConnection()
+        {
+            dbMan.CloseConnection();
+        }
 
         public int InsertEmployee(int ID, string E_Fname, string E_Lname, string E_City, string E_Street, string E_State, int St_Hours, string St_ID, string Super_ID)
         {
@@ -160,6 +229,7 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
+
         public DataTable getSups() // to get all suppliers names and IDs
         {
             string query = "SELECT Supplier.Su_Fname , Supplier.Su_Lname, SupplierID# FROM Supplier;";
@@ -213,6 +283,7 @@ namespace ExoCasualWear
 
             return Int32.Parse(dbMan.UpdateData(query).ToString());
         }
+
 
     }
 }

@@ -42,7 +42,6 @@ namespace ExoCasualWear
 
                 this.Hide();
                 Main mainform = new Main();
-                this.Hide();
                 mainform.Show();
             }
             else
