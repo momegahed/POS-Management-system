@@ -118,14 +118,19 @@ namespace ExoCasualWear
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ManageStores mgs = new ManageStores();
-            mgs.Show();
+            
         }
 
         private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ManageUsers mu = new ManageUsers();
             mu.Show();
+        }
+
+        private void manageStoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageStores mgs = new ManageStores();
+            mgs.Show();
         }
     }
 }
