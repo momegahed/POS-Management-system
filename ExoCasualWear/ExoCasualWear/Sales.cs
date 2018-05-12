@@ -107,11 +107,25 @@ namespace ExoCasualWear
             if (e.KeyCode == Keys.Enter)
             {
 
-             /*     DataTable itemdata = c.ItemProfile(Int64.Parse(barcodeentrytextbox.Text));
-                //buffer.Rows.Add(itemdata.Rows[0].ItemArray);
-                   dataGridView1.
-                 dataGridView1.Refresh();
-                   barcodeentrytextbox.Text = ";"*/
+                foreach (DataGridViewRow row in dataGridView1.Rows) {
+
+                    if (barcodeentrytextbox.Text == row.Cells[0].Value.ToString()) {
+                        
+                        int amount = (Int32) row.Cells[3].Value;
+
+                        row.Cells[3].Value = amount + 1;
+                        barcodeentrytextbox.Text = "";
+                        return;
+                    
+                    }
+
+                
+                
+                
+                }
+
+
+
                 try
                 {
                     dt = c.getItem(Int64.Parse(barcodeentrytextbox.Text));
