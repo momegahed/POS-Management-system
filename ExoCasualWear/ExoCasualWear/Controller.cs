@@ -343,7 +343,7 @@ namespace ExoCasualWear
 
         public DataTable ReciptProfile(int ID)
         {
-            string query = "SELECT * FROM R_Contains, Receipt WHERE Receipt# = " + ID + " AND Receipt#=ReceiptID;";
+            string query = "SELECT Item#No AS Item_Number, Item_discription, Quantity , R_Contains.Price ,Discount FROM R_Contains, Receipt, Items WHERE Receipt# =" + ID + " AND Receipt#=ReceiptID AND Item#No=ItemNO#;";
             return dbMan.ExecuteTableQuery(query);
         }
     }
