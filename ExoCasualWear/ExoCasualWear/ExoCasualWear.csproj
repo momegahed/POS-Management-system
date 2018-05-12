@@ -95,6 +95,16 @@
     <Compile Include="EditStore.Designer.cs">
       <DependentUpon>EditStore.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExoDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="forgetpass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +288,28 @@
     <EmbeddedResource Include="totalsales.resx">
       <DependentUpon>totalsales.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ExoDataSet.xsc">
+      <DependentUpon>ExoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ExoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExoDataSet.xss">
+      <DependentUpon>ExoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ExoDataSet1.xsc">
+      <DependentUpon>ExoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ExoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExoDataSet1.xss">
+      <DependentUpon>ExoDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

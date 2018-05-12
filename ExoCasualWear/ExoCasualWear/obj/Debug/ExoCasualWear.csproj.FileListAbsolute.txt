@@ -95,7 +95,6 @@ H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualW
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.pdb
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.pdb
-H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addcustomer.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addemployee.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.additem.resources
