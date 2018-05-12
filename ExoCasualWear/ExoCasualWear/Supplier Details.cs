@@ -10,18 +10,22 @@ using System.Windows.Forms;
 
 namespace ExoCasualWear
 {
-    public partial class memberdetails : Form
+    public partial class Supplier_Details : Form
     {
         Controller c = new Controller();
-        public memberdetails()
+
+        public Supplier_Details()
         {
             InitializeComponent();
         }
 
-        private void searchbutton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = c.MemberProfile(int.Parse(itemidtextbox.Text));
+            DataTable dt = c.Supplier_Details(Int32.Parse(ID.Text));
+            dataGridView1.DataSource = dt;
             dataGridView1.Refresh();
         }
+
+
     }
 }

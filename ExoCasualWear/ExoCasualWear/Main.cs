@@ -103,5 +103,23 @@ namespace ExoCasualWear
 
             sd.Show();
         }
+
+        private void addSupplierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addsupplier ads = new addsupplier();
+            ads.Show();
+        }
+
+        private void supplierDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Supplier_Details supd = new Supplier_Details();
+            supd.Show();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManageStores mgs = new ManageStores();
+            mgs.Show();
+        }
     }
 }
