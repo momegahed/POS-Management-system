@@ -61,7 +61,9 @@ namespace ExoCasualWear
                 }
                 else
                 {
+                    reader.Close();
                     return null;
+
                 }
             }
             catch (Exception ex)

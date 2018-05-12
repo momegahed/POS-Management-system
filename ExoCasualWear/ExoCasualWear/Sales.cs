@@ -14,7 +14,7 @@ namespace ExoCasualWear
         int i;
         Controller c = new Controller();
         DataTable buffer = new DataTable();
-
+        double totalPrice = 0.0, totalDiscount = 0.0, netPrice = 0.0;
         DataTable dt = new DataTable();
          
         public Sales()
@@ -58,33 +58,40 @@ namespace ExoCasualWear
     
         private void plusbutton_Click(object sender, EventArgs e)
         {
-           i = dataGridView1.CurrentRow.Index;
-           if (dataGridView1.Rows[i].Cells[3].Value != null)
-           {
-               int amount = (Int32)dataGridView1.Rows[i].Cells[3].Value;
+            if (this.dataGridView1.Rows.Count > 0)
+            {
+                i = dataGridView1.CurrentRow.Index;
+                if (dataGridView1.Rows[i].Cells[3].Value != null)
+                {
+                    int amount = (Int32)dataGridView1.Rows[i].Cells[3].Value;
 
 
-               dataGridView1.Rows[i].Cells[3].Value = amount + 1;
-           }
+                    dataGridView1.Rows[i].Cells[3].Value = amount + 1;
+                }
+            }
         }
 
         private void minusbutton_Click(object sender, EventArgs e)
         {
-            i = this.dataGridView1.CurrentRow.Index;
-            if (dataGridView1.Rows[i].Cells[3].Value != null)
+            if (this.dataGridView1.Rows.Count > 0)
             {
-                int amount = (Int32)dataGridView1.Rows[i].Cells[3].Value;
-                if (amount > 1)
+                i = this.dataGridView1.CurrentRow.Index;
+
+                if (dataGridView1.Rows[i].Cells[3].Value != null)
                 {
-                    dataGridView1.Rows[i].Cells[3].Value = amount - 1;
+                    int amount = (Int32)dataGridView1.Rows[i].Cells[3].Value;
+                    if (amount > 1)
+                    {
+                        dataGridView1.Rows[i].Cells[3].Value = amount - 1;
+
+                    }
+                    else if (amount == 1) { dataGridView1.Rows.RemoveAt(i); }
 
                 }
-                else if (amount == 1) { dataGridView1.Rows.RemoveAt(i); }
-
+                else if (dataGridView1.Rows.Count > 1) { dataGridView1.Rows.RemoveAt(i); }
             }
-            else if(dataGridView1.Rows.Count > 1) { dataGridView1.Rows.RemoveAt(i); }
-        }
 
+        }
   
 
 
@@ -105,15 +112,97 @@ namespace ExoCasualWear
                    dataGridView1.
                  dataGridView1.Refresh();
                    barcodeentrytextbox.Text = ";"*/
-              
-                
-                dt = c.getItem(Int64.Parse(barcodeentrytextbox.Text));
-            
+                try
+                {
+                    dt = c.getItem(Int64.Parse(barcodeentrytextbox.Text));
+                }
+                catch (Exception ee) { MessageBox.Show("ERROR");
+                dt = null;
+                }
+                    if (dt != null)
+                    {
+                        buffer.Rows.Add(dt.Rows[0].ItemArray);
+                        barcodeentrytextbox.Text = "";
 
-                buffer.Rows.Add(dt.Rows[0].ItemArray);
-                dataGridView1.DataSource = buffer;
+                    }
+                    else { 
+                      MessageBox.Show("This item doesn't exist");
+                    barcodeentrytextbox.Text = "";
+                    }
+                    dataGridView1.DataSource = buffer;
+                    dataGridView1.Refresh();
+              //  
 
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+
+            totalPrice = 0.0; totalDiscount = 0.0; netPrice = 0.0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                int amount = (Int32)row.Cells[3].Value;
+                Double price = Double.Parse(row.Cells[2].Value.ToString());
+                Double discount = Double.Parse(row.Cells[4].Value.ToString());
+
+
+
+                totalPrice += price * amount;
+                totalDiscount += price * amount * discount;
+            }
+
+            netPrice = totalPrice - totalDiscount;
+            this.netprice.Text = netPrice.ToString();
+            this.totalprice.Text = totalPrice.ToString();
+            this.totaldiscount.Text = totalDiscount.ToString();
+        }
+
+        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            totalPrice = 0.0; totalDiscount = 0.0; netPrice = 0.0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                int amount = (Int32)row.Cells[3].Value;
+                Double price = Double.Parse(row.Cells[2].Value.ToString());
+                Double discount = Double.Parse(row.Cells[4].Value.ToString());
+
+
+
+                totalPrice += price * amount;
+                totalDiscount += price * amount * discount;
+            }
+
+            netPrice = totalPrice - totalDiscount;
+            this.netprice.Text = netPrice.ToString();
+            this.totalprice.Text = totalPrice.ToString();
+            this.totaldiscount.Text = totalDiscount.ToString();
+        }
+
+        private void dataGridView1_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            totalPrice = 0.0; totalDiscount = 0.0; netPrice = 0.0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                int amount = (Int32)row.Cells[3].Value;
+                Double price = Double.Parse(row.Cells[2].Value.ToString());
+                Double discount = Double.Parse(row.Cells[4].Value.ToString());
+
+
+
+                totalPrice += price * amount;
+                totalDiscount += price * amount * discount;
+            }
+
+            netPrice = totalPrice - totalDiscount;
+            this.netprice.Text = netPrice.ToString();
+            this.totalprice.Text = totalPrice.ToString();
+            this.totaldiscount.Text = totalDiscount.ToString();
         }
     }
 }
