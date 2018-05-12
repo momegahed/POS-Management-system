@@ -1,7 +1,6 @@
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe.config
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.pdb
-H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Properties.Resources.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.GenerateResource.Cache
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
@@ -24,3 +23,70 @@ C:\Users\Ahmed Wael\Source\Repos\DataManagementProject18\ExoCasualWear\ExoCasual
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.additem.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addemployee.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addcustomer.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalemployees.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalsales.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.itemdetails.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.memberdetails.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.mostsolditemperstore.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.shipmentdetails.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe.config
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.pdb
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.pdb
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addcustomer.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addemployee.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.additem.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.itemdetails.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Main.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Login.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.memberdetails.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.mostsolditemperstore.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Properties.Resources.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Sales.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.shipmentdetails.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalemployees.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalsales.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.GenerateResource.Cache
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe.config
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.pdb
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addcustomer.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addemployee.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.additem.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.itemdetails.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Main.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Login.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.memberdetails.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.mostsolditemperstore.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Properties.Resources.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Sales.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.shipmentdetails.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalemployees.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalsales.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.GenerateResource.Cache
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.pdb
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addsupplier.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_Details.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ManageStores.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addshipment.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addstore.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addshipment.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addstore.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addsupplier.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ManageStores.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_Details.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.AddUser.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ChangeUserType.resources
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.DeleteUser.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.AddUser.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ChangeUserType.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.DeleteUser.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.EditStore.resources
+C:\Users\maxmo\OneDrive\Desktop\DataManagementProject18-Abdelmoez\ExoCasualWear\ExoCasualWear\bin\Debug\ExoCasualWear.exe.config
+C:\Users\maxmo\OneDrive\Desktop\DataManagementProject18-Abdelmoez\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.exe
+C:\Users\maxmo\OneDrive\Desktop\DataManagementProject18-Abdelmoez\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.pdb
