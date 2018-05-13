@@ -71,6 +71,7 @@
             this.storesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageStoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesInPreiodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +79,9 @@
             // 
             this.salesbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesbutton.Location = new System.Drawing.Point(9, 542);
+
             this.salesbutton.Margin = new System.Windows.Forms.Padding(2);
+
             this.salesbutton.Name = "salesbutton";
             this.salesbutton.Size = new System.Drawing.Size(242, 84);
             this.salesbutton.TabIndex = 0;
@@ -90,7 +93,9 @@
             // 
             this.reportsbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportsbutton.Location = new System.Drawing.Point(258, 542);
+
             this.reportsbutton.Margin = new System.Windows.Forms.Padding(2);
+
             this.reportsbutton.Name = "reportsbutton";
             this.reportsbutton.Size = new System.Drawing.Size(242, 84);
             this.reportsbutton.TabIndex = 1;
@@ -101,7 +106,9 @@
             // 
             this.Inventorybutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Inventorybutton.Location = new System.Drawing.Point(507, 542);
+
             this.Inventorybutton.Margin = new System.Windows.Forms.Padding(2);
+
             this.Inventorybutton.Name = "Inventorybutton";
             this.Inventorybutton.Size = new System.Drawing.Size(242, 84);
             this.Inventorybutton.TabIndex = 2;
@@ -113,6 +120,7 @@
             this.closetheshiftbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closetheshiftbutton.Location = new System.Drawing.Point(756, 542);
             this.closetheshiftbutton.Margin = new System.Windows.Forms.Padding(2);
+
             this.closetheshiftbutton.Name = "closetheshiftbutton";
             this.closetheshiftbutton.Size = new System.Drawing.Size(242, 84);
             this.closetheshiftbutton.TabIndex = 3;
@@ -122,8 +130,9 @@
             // exitbutton
             // 
             this.exitbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitbutton.Location = new System.Drawing.Point(892, 25);
-            this.exitbutton.Margin = new System.Windows.Forms.Padding(2);
+
+            this.exitbutton.Location = new System.Drawing.Point(892, 10);
+            this.exitbutton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exitbutton.Name = "exitbutton";
             this.exitbutton.Size = new System.Drawing.Size(103, 67);
             this.exitbutton.TabIndex = 4;
@@ -164,7 +173,10 @@
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -172,6 +184,7 @@
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // recoveryToolStripMenuItem
@@ -187,12 +200,14 @@
             // 
             this.createBackupToolStripMenuItem.Name = "createBackupToolStripMenuItem";
             this.createBackupToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+
             this.createBackupToolStripMenuItem.Text = "Create backup";
             // 
             // loadBackupToolStripMenuItem
             // 
             this.loadBackupToolStripMenuItem.Name = "loadBackupToolStripMenuItem";
             this.loadBackupToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+
             this.loadBackupToolStripMenuItem.Text = "Load backup";
             // 
             // itemsToolStripMenuItem
@@ -211,10 +226,12 @@
             this.itemsListToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.itemsListToolStripMenuItem.Text = "Items list/edit";
             this.itemsListToolStripMenuItem.Click += new System.EventHandler(this.itemsListToolStripMenuItem_Click);
+
             // 
             // addItemToolStripMenuItem
             // 
             this.addItemToolStripMenuItem.Name = "addItemToolStripMenuItem";
+
             this.addItemToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.addItemToolStripMenuItem.Text = "Add Item";
             this.addItemToolStripMenuItem.Click += new System.EventHandler(this.addItemToolStripMenuItem_Click);
@@ -223,6 +240,7 @@
             // 
             this.itemDetailsToolStripMenuItem.Name = "itemDetailsToolStripMenuItem";
             this.itemDetailsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+
             this.itemDetailsToolStripMenuItem.Text = "Item details";
             this.itemDetailsToolStripMenuItem.Click += new System.EventHandler(this.itemDetailsToolStripMenuItem_Click);
             // 
@@ -240,6 +258,7 @@
             // 
             this.addEmployeeToolStripMenuItem.Name = "addEmployeeToolStripMenuItem";
             this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+
             this.addEmployeeToolStripMenuItem.Text = "Add Employee";
             this.addEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addEmployeeToolStripMenuItem_Click);
             // 
@@ -247,6 +266,7 @@
             // 
             this.totalEmployeesToolStripMenuItem.Name = "totalEmployeesToolStripMenuItem";
             this.totalEmployeesToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+
             this.totalEmployeesToolStripMenuItem.Text = "Total Employees";
             this.totalEmployeesToolStripMenuItem.Click += new System.EventHandler(this.totalEmployeesToolStripMenuItem_Click);
             // 
@@ -319,6 +339,7 @@
             // 
             this.totalSalesToolStripMenuItem.Name = "totalSalesToolStripMenuItem";
             this.totalSalesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+
             this.totalSalesToolStripMenuItem.Text = "Total Sales";
             this.totalSalesToolStripMenuItem.Click += new System.EventHandler(this.totalSalesToolStripMenuItem_Click);
             // 
@@ -408,6 +429,7 @@
             // 
             this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
             this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+
             this.manageUsersToolStripMenuItem.Text = "Manage Users";
             this.manageUsersToolStripMenuItem.Click += new System.EventHandler(this.manageUsersToolStripMenuItem_Click);
             // 
@@ -426,6 +448,7 @@
             this.manageStoresToolStripMenuItem.Text = "Manage Stores";
             this.manageStoresToolStripMenuItem.Click += new System.EventHandler(this.manageStoresToolStripMenuItem_Click);
             // 
+
             // salesInPreiodToolStripMenuItem
             // 
             this.salesInPreiodToolStripMenuItem.Name = "salesInPreiodToolStripMenuItem";
@@ -433,6 +456,7 @@
             this.salesInPreiodToolStripMenuItem.Text = "Sales in Preiod";
             this.salesInPreiodToolStripMenuItem.Click += new System.EventHandler(this.salesInPreiodToolStripMenuItem_Click);
             // 
+
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,6 +473,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
+
             this.Name = "Main";
             this.Text = "Exo Casual Wear";
             this.menuStrip1.ResumeLayout(false);
@@ -503,5 +528,6 @@
         private System.Windows.Forms.ToolStripMenuItem suppliersListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem salesInPreiodToolStripMenuItem;
+
     }
 }

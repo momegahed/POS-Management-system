@@ -12,6 +12,7 @@ namespace ExoCasualWear
     public partial class Sales : Form
     {
         int i;
+        Int64 RID; // receipt ID
         Controller c = new Controller();
         DataTable buffer = new DataTable();
         double totalPrice = 0.0, totalDiscount = 0.0, netPrice = 0.0;
@@ -49,6 +50,10 @@ namespace ExoCasualWear
             buffer =c.getItem(1);
             buffer.Rows.Clear();
 
+
+            RID = c.Receipt_AG() + 1;
+            invoicenumber.Text = RID.ToString();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -73,6 +78,7 @@ namespace ExoCasualWear
 
         private void minusbutton_Click(object sender, EventArgs e)
         {
+            
             if (this.dataGridView1.Rows.Count > 0)
             {
                 i = this.dataGridView1.CurrentRow.Index;
@@ -218,5 +224,30 @@ namespace ExoCasualWear
             this.totalprice.Text = totalPrice.ToString();
             this.totaldiscount.Text = totalDiscount.ToString();
         }
+
+        private void printbutton_Click(object sender, EventArgs e)
+        {
+
+            if (buffer.Rows.Count > 0)
+            {
+
+                c.CreateNewReceipt(RID, totalPrice, totalDiscount, 1, 1);
+                foreach (DataRow row in buffer.Rows)
+                {
+                    Int64 Itemno = Int64.Parse(row["itemnumber"].ToString());
+
+                    Double descount = Double.Parse(row["discount"].ToString());
+                    int Quantity = Int32.Parse(row["Quantity"].ToString());
+                    c.fillR(RID, 1, Itemno, row["price"].ToString(), descount, Quantity);
+
+
+
+                }
+                this.Close();
+            }
+            else { MessageBox.Show("Please add Items first", "Error"); }
+        }
+
+
     }
 }

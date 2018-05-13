@@ -45,6 +45,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.totaldiscount = new System.Windows.Forms.Label();
             this.netprice = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.invoicenumber = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,6 +129,7 @@
             this.printbutton.Size = new System.Drawing.Size(75, 70);
             this.printbutton.TabIndex = 5;
             this.printbutton.UseVisualStyleBackColor = true;
+            this.printbutton.Click += new System.EventHandler(this.printbutton_Click);
             // 
             // minusbutton
             // 
@@ -215,11 +218,34 @@
             this.netprice.Size = new System.Drawing.Size(180, 39);
             this.netprice.TabIndex = 13;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label3.Location = new System.Drawing.Point(61, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(190, 29);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Invoice Number";
+            // 
+            // invoicenumber
+            // 
+            this.invoicenumber.AutoSize = true;
+            this.invoicenumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.invoicenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.invoicenumber.Location = new System.Drawing.Point(257, 60);
+            this.invoicenumber.MinimumSize = new System.Drawing.Size(150, 0);
+            this.invoicenumber.Name = "invoicenumber";
+            this.invoicenumber.Size = new System.Drawing.Size(150, 29);
+            this.invoicenumber.TabIndex = 15;
+            // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 779);
+            this.Controls.Add(this.invoicenumber);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.netprice);
             this.Controls.Add(this.totaldiscount);
             this.Controls.Add(this.label7);
@@ -260,5 +286,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label totaldiscount;
         private System.Windows.Forms.Label netprice;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label invoicenumber;
     }
 }

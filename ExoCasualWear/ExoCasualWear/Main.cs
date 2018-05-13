@@ -186,5 +186,6 @@ namespace ExoCasualWear
             Sales_in_preiod sp = new Sales_in_preiod();
             sp.Show();
         }
+
     }
 }

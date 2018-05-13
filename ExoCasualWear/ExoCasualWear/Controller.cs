@@ -236,6 +236,12 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
+        public int Shipment_AG()
+        {
+            string query = "SELECT Count(ShipmentID#) AS AG_ShipmentNum FROM Shipment";
+            return Int32.Parse(dbMan.ExecuteScalarQuery(query).ToString());
+        }
+
         public DataTable getItem(Int64 ItemNum) //to get item no,detailsmprice,1,discount 
         {
             string query = "SELECT ItemNO# AS itemnumber , Item_discription AS ItemDescription , Price AS price,Store# AS Quantity ,Value AS discount  From Items , Store, Offer WHERE Store# = 1 AND Items.OfID=OfferID AND ItemNO# = " + ItemNum + ";";
@@ -245,11 +251,12 @@ namespace ExoCasualWear
         public int fillship(Int64 ItemNum , int StoreID, int ShipID, int quantity) //to fill data inside shipment (supplystore Table)
         {
             string query = "INSERT INTO Supply_Store " +
-                            "Values ('" + ItemNum + "','" + StoreID + "','" + ShipID + "','" + quantity + "');";
+                            "Values ('" + ItemNum + "','" + StoreID + "','" + ShipID + "','" + quantity + "');"+
+                            " UPDATE SoldAt SET Available = (SELECT Available FROM SoldAt AS OLDSoldAt WHERE SoldAt.ItemsNumber=OLDSoldAt.ItemsNumber AND SoldAt.StID=OLDSoldAt.StID)+" + quantity + " WHERE SoldAt.ItemsNumber='" + ItemNum + "' AND SoldAt.StID='" + StoreID + "';";
             return dbMan.UpdateData(query);
         }
 
-        public int fillR(Int64 RID, int EmpID, Int64 ItemNum, int price, int descount, int quantity) //to fill data inside specific recipt (R_contain table)
+        public int fillR(Int64 RID, int EmpID, Int64 ItemNum, string price, double descount, int quantity) //to fill data inside specific recipt (R_contain table)
         {
             string query = "INSERT INTO R_contains " +
                             "Values ('" + quantity + "','" + RID + "','" + ItemNum + "','" + price + "','" + descount + "');" +
@@ -290,6 +297,7 @@ namespace ExoCasualWear
             return dbMan.UpdateData(query);
         }
 
+
         //shawkyyyyyyyy
         public DataTable EmployeeProfile(int EmpID)
         {
@@ -305,6 +313,9 @@ namespace ExoCasualWear
 
         public int Edit_Item(Int64 ItemNO, string Item_discription, string Item_detailed_discription, double Price, string Category, string Brand, int OfID)
         {
+
+
+       
             string query = "UPDATE Items SET Item_discription='" + Item_discription + "', Item_detailed_discription='" + Item_detailed_discription + "', Price=" + Price + ", Category='" + Category + "', Brand='" + Brand + "', OfID=" + OfID + " WHERE ItemNO#=" + ItemNO + " ;";
 
             return dbMan.UpdateData(query);
@@ -328,6 +339,7 @@ namespace ExoCasualWear
             return dbMan.ExecuteTableQuery(query);
         }
 
+
         public DataTable Shipments_List()
         {
             string query = "SELECT ShipmentID#, Sh_Date, Supplier.Su_Fname, Supplier.Su_Lname, Supplier.Su_Phone#, Supply_Store.StoreID AS ID_Of_Supplied_Store FROM Shipment, Supplier, Supply_Store WHERE Shipment.SupID#=Supplier.SupplierID# AND Supply_Store.ShipID=Shipment.ShipmentID#;";
@@ -346,5 +358,6 @@ namespace ExoCasualWear
             string query = "SELECT Item#No AS Item_Number, Item_discription, Quantity , R_Contains.Price ,Discount FROM R_Contains, Receipt, Items WHERE Receipt# =" + ID + " AND Receipt#=ReceiptID AND Item#No=ItemNO#;";
             return dbMan.ExecuteTableQuery(query);
         }   
+
     }
 }
