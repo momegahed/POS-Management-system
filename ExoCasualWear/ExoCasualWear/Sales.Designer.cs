@@ -42,9 +42,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.totaldiscount = new System.Windows.Forms.Label();
             this.netprice = new System.Windows.Forms.Label();
+
             this.printbutton = new System.Windows.Forms.Button();
             this.minusbutton = new System.Windows.Forms.Button();
             this.plusbutton = new System.Windows.Forms.Button();
+
+            this.label3 = new System.Windows.Forms.Label();
+            this.invoicenumber = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,6 +119,46 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Barcode:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+
+            // printbutton
+            // 
+            this.printbutton.BackgroundImage = global::ExoCasualWear.Properties.Resources.print;
+            this.printbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.printbutton.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printbutton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.printbutton.Location = new System.Drawing.Point(12, 348);
+            this.printbutton.Name = "printbutton";
+            this.printbutton.Size = new System.Drawing.Size(75, 70);
+            this.printbutton.TabIndex = 5;
+            this.printbutton.UseVisualStyleBackColor = true;
+            this.printbutton.Click += new System.EventHandler(this.printbutton_Click);
+            // 
+            // minusbutton
+            // 
+            this.minusbutton.BackgroundImage = global::ExoCasualWear.Properties.Resources.minus;
+            this.minusbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.minusbutton.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minusbutton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.minusbutton.Location = new System.Drawing.Point(12, 262);
+            this.minusbutton.Name = "minusbutton";
+            this.minusbutton.Size = new System.Drawing.Size(75, 70);
+            this.minusbutton.TabIndex = 4;
+            this.minusbutton.UseVisualStyleBackColor = true;
+            this.minusbutton.Click += new System.EventHandler(this.minusbutton_Click);
+            // 
+            // plusbutton
+            // 
+            this.plusbutton.BackgroundImage = global::ExoCasualWear.Properties.Resources.plus;
+            this.plusbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.plusbutton.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusbutton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.plusbutton.Location = new System.Drawing.Point(12, 173);
+            this.plusbutton.Name = "plusbutton";
+            this.plusbutton.Size = new System.Drawing.Size(75, 70);
+            this.plusbutton.TabIndex = 3;
+            this.plusbutton.UseVisualStyleBackColor = true;
+            this.plusbutton.Click += new System.EventHandler(this.plusbutton_Click);
             // 
             // label2
             // 
@@ -216,12 +260,35 @@
             this.plusbutton.TabIndex = 3;
             this.plusbutton.UseVisualStyleBackColor = true;
             this.plusbutton.Click += new System.EventHandler(this.plusbutton_Click);
+
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label3.Location = new System.Drawing.Point(61, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(190, 29);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Invoice Number";
+            // 
+            // invoicenumber
+            // 
+            this.invoicenumber.AutoSize = true;
+            this.invoicenumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.invoicenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.invoicenumber.Location = new System.Drawing.Point(257, 60);
+            this.invoicenumber.MinimumSize = new System.Drawing.Size(150, 0);
+            this.invoicenumber.Name = "invoicenumber";
+            this.invoicenumber.Size = new System.Drawing.Size(150, 29);
+            this.invoicenumber.TabIndex = 15;
             // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 779);
+            this.Controls.Add(this.invoicenumber);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.netprice);
             this.Controls.Add(this.totaldiscount);
             this.Controls.Add(this.label7);
@@ -262,5 +329,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label totaldiscount;
         private System.Windows.Forms.Label netprice;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label invoicenumber;
     }
 }
