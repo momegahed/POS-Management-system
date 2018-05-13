@@ -32,5 +32,10 @@ namespace ExoCasualWear
         {
 
         }
+
+        private void category_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

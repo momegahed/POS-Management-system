@@ -23,5 +23,15 @@ namespace ExoCasualWear
             dataGridView1.DataSource = c.ItemProfile(Int64.Parse(itemidtextbox.Text));
             dataGridView1.Refresh();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void itemidtextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

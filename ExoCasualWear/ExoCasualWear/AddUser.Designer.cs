@@ -37,12 +37,11 @@
             this.TxtBx_password = new System.Windows.Forms.TextBox();
             this.TxtBx_ID = new System.Windows.Forms.TextBox();
             this.Btn_AddUser = new System.Windows.Forms.Button();
-            this.userTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-           
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.comboBox_Type = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtBx_Security = new System.Windows.Forms.TextBox();
+            this.userTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.userTypeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,11 +112,6 @@
             this.Btn_AddUser.UseVisualStyleBackColor = true;
             this.Btn_AddUser.Click += new System.EventHandler(this.Btn_AddUser_Click);
             // 
-            // userTypeBindingSource
-            // 
-            this.userTypeBindingSource.DataMember = "User_Type";
-         
-            // 
             // fillByToolStrip
             // 
             this.fillByToolStrip.Dock = System.Windows.Forms.DockStyle.None;
@@ -159,10 +153,15 @@
             this.TxtBx_Security.Size = new System.Drawing.Size(311, 22);
             this.TxtBx_Security.TabIndex = 12;
             // 
+            // userTypeBindingSource
+            // 
+            this.userTypeBindingSource.DataMember = "User_Type";
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(841, 548);
             this.Controls.Add(this.TxtBx_Security);
             this.Controls.Add(this.label5);

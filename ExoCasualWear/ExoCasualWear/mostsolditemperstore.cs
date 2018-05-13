@@ -30,5 +30,9 @@ namespace ExoCasualWear
             dataGridView1.Refresh();
         }
 
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

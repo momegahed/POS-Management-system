@@ -63,6 +63,12 @@
     <Compile Include="additem.Designer.cs">
       <DependentUpon>additem.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOffer.Designer.cs">
+      <DependentUpon>AddOffer.cs</DependentUpon>
+    </Compile>
     <Compile Include="addshipment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeOffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeOffer.Designer.cs">
+      <DependentUpon>ChangeOffer.cs</DependentUpon>
     </Compile>
     <Compile Include="ChangeUserType.cs">
       <SubType>Form</SubType>
@@ -167,6 +179,12 @@
     <Compile Include="mostsolditemperstore.Designer.cs">
       <DependentUpon>mostsolditemperstore.cs</DependentUpon>
     </Compile>
+    <Compile Include="Offer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offer.Designer.cs">
+      <DependentUpon>Offer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales.cs">
@@ -214,6 +232,9 @@
     <EmbeddedResource Include="additem.resx">
       <DependentUpon>additem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddOffer.resx">
+      <DependentUpon>AddOffer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addshipment.resx">
       <DependentUpon>addshipment.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeOffer.resx">
+      <DependentUpon>ChangeOffer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeUserType.resx">
       <DependentUpon>ChangeUserType.cs</DependentUpon>
@@ -252,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mostsolditemperstore.resx">
       <DependentUpon>mostsolditemperstore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offer.resx">
+      <DependentUpon>Offer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

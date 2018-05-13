@@ -128,6 +128,49 @@ namespace ExoCasualWear
             string query = "SELECT username, type, EmployeeID FROM User_Type ";
             return dbMan.ExecuteTableQuery(query);
         }
+        public DataTable Offer()
+        {
+            string query = "SELECT ItemNO# AS Item_Number,Item_discription , Brand, Price, Value AS Offer_Value, O_Start, O_End FROM Items,Offer WHERE OfferID=OfID";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public DataTable Price(string item_dis, string brand)
+        {
+            string query = "SELECT Price FROM Items WHERE Item_discription = '"+item_dis+"' AND Brand = '"+ brand+"'; ";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public void ChangeOffer(Int64 item_number, float newoffer)
+        {
+            string query = "UPDATE Offer SET Offer.Value = '" + newoffer + "' FROM Offer, Items WHERE itemNO# = '" + item_number + "' AND Items.OfID=Offer.OfferID " ;
+            object p = dbMan.ExecuteScalarQuery(query);
+        }
+
+        public DataTable SelectItemNumber()
+        {
+            string query = "SELECT ItemNO# FROM Items WHERE OFID IS NOT NULL ";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public DataTable SelectOfferItem()
+        {
+            string query = "SELECT DISTINCT Item_discription FROM Items WHERE OfID IS NULL ";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public DataTable SelectOfferBrand()
+        {
+            string query = "SELECT DISTINCT Brand FROM Items WHERE OfID IS NULL";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public int AddOffer(float offer, string start, string end, int ID, string item_dis , string brand)
+        {
+            string query = "INSERT INTO Offer VALUES ( '" + ID + "', '" + start + "' ,'" + end + "',  '" + offer + "') ; UPDATE Items SET OfID = '" + ID + "' FROM Offer,Items WHERE Item_discription = '" + item_dis + "' AND Brand = '" + brand + "' ;";
+            return Int16.Parse(dbMan.UpdateData(query).ToString());
+
+        }
+
 
         public void TerminateConnection()
         {

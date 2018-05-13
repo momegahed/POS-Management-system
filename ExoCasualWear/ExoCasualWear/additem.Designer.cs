@@ -98,6 +98,7 @@
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(158, 24);
             this.category.TabIndex = 6;
+            this.category.SelectedIndexChanged += new System.EventHandler(this.category_SelectedIndexChanged);
             // 
             // label4
             // 

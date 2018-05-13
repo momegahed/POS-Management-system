@@ -118,7 +118,10 @@ namespace ExoCasualWear
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            if (MessageBox.Show("Are You Sure To Log out?", "Log out", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
@@ -131,6 +134,12 @@ namespace ExoCasualWear
         {
             ManageStores mgs = new ManageStores();
             mgs.Show();
+        }
+
+        private void offersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Offer of = new Offer();
+            of.Show();
         }
     }
 }

@@ -177,6 +177,16 @@ namespace ExoCasualWear
             this.totaldiscount.Text = totalDiscount.ToString();
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalprice_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             totalPrice = 0.0; totalDiscount = 0.0; netPrice = 0.0;

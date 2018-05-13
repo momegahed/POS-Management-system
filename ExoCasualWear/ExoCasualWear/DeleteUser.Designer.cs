@@ -59,7 +59,6 @@
             // userTypeBindingSource
             // 
             this.userTypeBindingSource.DataMember = "User_Type";
-           
             // 
             // fillByToolStrip
             // 
