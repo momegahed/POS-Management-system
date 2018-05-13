@@ -1,0 +1,27 @@
+ Recipt ID: 13
+ Date and Time: 5/13/2018 12:00:00 AM Customer ID: 1
+ Cashier ID: 1
+======================================================
+item#               Name   Quantity     Price Discount
+======================================================
+
+    1                shirt     2     230.0000 0.10
+
+    2              t-shirt     3     160.0000 0.10
+
+    3             trousers     1     300.0000 0.10
+
+    4                jeans     4     250.0000 0.10
+
+    5           sweatpants     1     180.0000 0.30
+
+    6             pullover     2     270.0000 0.35
+
+    7               jacket     2     700.0000 0.15
+
+=======================================================
+
+                       total before discount: 4360.0000
+                                    discount: 677.0000
+                        total after discount: 3683
+

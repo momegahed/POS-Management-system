@@ -47,7 +47,6 @@
             this.totalSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesInPreiodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemsFrequencyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timeAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shipmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addShipmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shipmentDetailsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -203,8 +202,7 @@
             // 
             this.analysisToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salesAnalysisToolStripMenuItem,
-            this.itemsFrequencyToolStripMenuItem,
-            this.timeAnalysisToolStripMenuItem});
+            this.itemsFrequencyToolStripMenuItem});
             this.analysisToolStripMenuItem.Name = "analysisToolStripMenuItem";
             this.analysisToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.analysisToolStripMenuItem.Text = "Analysis";
@@ -238,12 +236,6 @@
             this.itemsFrequencyToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
             this.itemsFrequencyToolStripMenuItem.Text = "Items Frequency";
             this.itemsFrequencyToolStripMenuItem.Click += new System.EventHandler(this.itemsFrequencyToolStripMenuItem_Click);
-            // 
-            // timeAnalysisToolStripMenuItem
-            // 
-            this.timeAnalysisToolStripMenuItem.Name = "timeAnalysisToolStripMenuItem";
-            this.timeAnalysisToolStripMenuItem.Size = new System.Drawing.Size(185, 24);
-            this.timeAnalysisToolStripMenuItem.Text = "Time Analysis";
             // 
             // shipmentsToolStripMenuItem
             // 
@@ -393,7 +385,6 @@
         private System.Windows.Forms.ToolStripMenuItem analysisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salesAnalysisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem itemsFrequencyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timeAnalysisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem totalSalesToolStripMenuItem;
