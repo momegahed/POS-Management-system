@@ -147,3 +147,5 @@ C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualW
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_Details.resources
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_list.resources
 C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ViewReciptContents.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Credits.resources
+C:\Users\Abdelmoez Elsaadany\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ViewReciptContents.resources

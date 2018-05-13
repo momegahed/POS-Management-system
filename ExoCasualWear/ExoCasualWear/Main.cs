@@ -231,7 +231,8 @@ namespace ExoCasualWear
 
         private void Inventorybutton_Click(object sender, EventArgs e)
         {
-
+            Credits c = new Credits();
+            c.Show();
         }
 
     }
