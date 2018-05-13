@@ -343,9 +343,6 @@ namespace ExoCasualWear
             string query = "UPDATE Store SET Operating_hours = '" + Ohours + "', St_City = '" + City + "', St_Street = '" + Street + "' , St_State = '" + State + "'Where Store# =" + ID + ";";
             return dbMan.UpdateData(query);
         }
-<<<<<<< HEAD
-=======
-
 
         //shawkyyyyyyyy
         public DataTable EmployeeProfile(int EmpID)
@@ -359,18 +356,12 @@ namespace ExoCasualWear
             string query = "SELECT ItemNO#, Item_discription, Item_detailed_discription, Price, Category, Brand, O_Start AS Offer_start_date, O_End AS Offer_end_date, Value AS Offer_value FROM Items, Offer WHERE Items.OfID=OfferID;";
             return dbMan.ExecuteTableQuery(query);
         }
+        
+
 
         public int Edit_Item(Int64 ItemNO, string Item_discription, string Item_detailed_discription, double Price, string Category, string Brand, int OfID)
         {
->>>>>>> origin/Abdelmoez
-
-
-<<<<<<< HEAD
-        public int Edit_Item(Int64 ItemNO, string Item_discription, string Item_detailed_discription, double Price, string Category, string Brand, int OfID)
-        {
-=======
        
->>>>>>> origin/Abdelmoez
             string query = "UPDATE Items SET Item_discription='" + Item_discription + "', Item_detailed_discription='" + Item_detailed_discription + "', Price=" + Price + ", Category='" + Category + "', Brand='" + Brand + "', OfID=" + OfID + " WHERE ItemNO#=" + ItemNO + " ;";
 
             return dbMan.UpdateData(query);
@@ -393,8 +384,6 @@ namespace ExoCasualWear
             string query = "SELECT MembershipID#, C_Fname, C_Lname, C_Phone#, SUM(Total_price) AS Total_cutomer_purchases FROM Customer,Receipt WHERE MemID#=MembershipID# GROUP BY MembershipID#, C_Fname, C_Lname, C_Phone#;";
             return dbMan.ExecuteTableQuery(query);
         }
-<<<<<<< HEAD
-=======
 
 
         public DataTable Shipments_List()
@@ -460,6 +449,5 @@ namespace ExoCasualWear
 
 
 
->>>>>>> origin/Abdelmoez
     }
 }

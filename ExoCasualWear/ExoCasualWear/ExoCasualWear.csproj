@@ -100,19 +100,14 @@
     <Compile Include="Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer List.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Customer List.cs" />
     <Compile Include="Customer List.Designer.cs">
       <DependentUpon>Customer List.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Customer Profile.cs" />
     <Compile Include="Customer Profile.Designer.cs">
       <DependentUpon>Customer Profile.cs</DependentUpon>
     </Compile>
-
     <Compile Include="DBManager.cs" />
     <Compile Include="DeleteUser.cs">
       <SubType>Form</SubType>
@@ -120,28 +115,21 @@
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Edit Item.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Edit Item.cs" />
     <Compile Include="Edit Item.Designer.cs">
       <DependentUpon>Edit Item.cs</DependentUpon>
     </Compile>
-
     <Compile Include="EditStore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditStore.Designer.cs">
       <DependentUpon>EditStore.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Employee Profile.cs" />
     <Compile Include="Employee Profile.Designer.cs">
       <DependentUpon>Employee Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employees List.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Employees List.cs" />
     <Compile Include="Employees List.Designer.cs">
       <DependentUpon>Employees List.cs</DependentUpon>
     </Compile>
