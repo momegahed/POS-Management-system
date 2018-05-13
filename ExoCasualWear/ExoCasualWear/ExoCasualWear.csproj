@@ -101,21 +101,18 @@
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Edit Item.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Edit Item.Designer.cs">
       <DependentUpon>Edit Item.cs</DependentUpon>
     </Compile>
-	
     <Compile Include="EditStore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditStore.Designer.cs">
       <DependentUpon>EditStore.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Employee Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,7 +125,6 @@
     <Compile Include="Employees List.Designer.cs">
       <DependentUpon>Employees List.cs</DependentUpon>
     </Compile>
-
     <Compile Include="ExoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -273,6 +269,12 @@
     <Compile Include="totalsales.Designer.cs">
       <DependentUpon>totalsales.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewReciptContents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReciptContents.Designer.cs">
+      <DependentUpon>ViewReciptContents.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addcustomer.resx">
       <DependentUpon>addcustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,11 +308,9 @@
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Edit Item.resx">
       <DependentUpon>Edit Item.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Employee Profile.resx">
       <DependentUpon>Employee Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,7 +320,6 @@
     <EmbeddedResource Include="Item List.resx">
       <DependentUpon>Item List.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="EditStore.resx">
       <DependentUpon>EditStore.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +375,9 @@
     <EmbeddedResource Include="totalsales.resx">
       <DependentUpon>totalsales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewReciptContents.resx">
+      <DependentUpon>ViewReciptContents.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ExoDataSet.xsc">
       <DependentUpon>ExoDataSet.xsd</DependentUpon>
     </None>
@@ -407,9 +409,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
- 
   </ItemGroup>
-
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>

@@ -128,3 +128,22 @@ H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualW
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalsales.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.GenerateResource.Cache
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addshipment.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addstore.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.addsupplier.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.AddUser.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ChangeUserType.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Customer_List.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Customer_Profile.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.DeleteUser.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Edit_Item.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Employee_Profile.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Employees_List.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Item_List.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.EditStore.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ManageStores.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Sales_in_preiod.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Shippment_List.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_Details.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.Supplier_list.resources
+C:\Users\medo_\Documents\GitHub\DataManagementProject18\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.ViewReciptContents.resources

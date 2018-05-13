@@ -12,7 +12,13 @@ namespace ExoCasualWear
 {
     public partial class Main : Form
     {
+        Int64 EMPTD;
+        String usertype;
         public Main()
+        {
+            InitializeComponent();
+        }
+        public Main(Int64 ID, String type)
         {
             InitializeComponent();
         }
@@ -39,8 +45,7 @@ namespace ExoCasualWear
 
         private void addEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            addemployee ae = new addemployee();
-            ae.Show();
+           
         }
 
         private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,8 +62,7 @@ namespace ExoCasualWear
 
         private void totalEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            totalemployees te = new totalemployees();
-            te.Show();
+          
         }
 
         private void itemsFrequencyToolStripMenuItem_Click(object sender, EventArgs e)
@@ -129,14 +133,12 @@ namespace ExoCasualWear
 
         private void manageStoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ManageStores mgs = new ManageStores();
-            mgs.Show();
+
         }
 
         private void employeeProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Employee_Profile ep = new Employee_Profile();
-            ep.Show();
+
         }
 
         private void itemsListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -185,6 +187,51 @@ namespace ExoCasualWear
         {
             Sales_in_preiod sp = new Sales_in_preiod();
             sp.Show();
+        }
+
+        private void shipmentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manageStoresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ManageStores mgs = new ManageStores();
+            mgs.Show();
+        }
+
+        private void totalEmployeesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            totalemployees te = new totalemployees();
+            te.Show();
+        }
+
+        private void addEmployeeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            addemployee ae = new addemployee();
+            ae.Show();
+        }
+
+        private void employeeProfileToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Employee_Profile ep = new Employee_Profile();
+            ep.Show();
+        }
+
+        private void mainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportsbutton_Click(object sender, EventArgs e)
+        {
+            ViewReciptContents ep = new ViewReciptContents();
+            ep.Show();
+        }
+
+        private void Inventorybutton_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
