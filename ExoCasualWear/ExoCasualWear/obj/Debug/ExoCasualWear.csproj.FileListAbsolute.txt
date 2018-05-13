@@ -118,3 +118,4 @@ H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualW
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalemployees.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.totalsales.resources
 H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csproj.GenerateResource.Cache
+H:\Zewail University\SPRING2018\DataManagementProject18\ExoCasualWear\ExoCasualWear\ExoCasualWear\obj\Debug\ExoCasualWear.csprojResolveAssemblyReference.cache
