@@ -12,7 +12,13 @@ namespace ExoCasualWear
 {
     public partial class Main : Form
     {
+        Int64 EMPTD;
+        String usertype;
         public Main()
+        {
+            InitializeComponent();
+        }
+        public Main(Int64 ID, String type)
         {
             InitializeComponent();
         }
@@ -39,8 +45,7 @@ namespace ExoCasualWear
 
         private void addEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            addemployee ae = new addemployee();
-            ae.Show();
+           
         }
 
         private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,8 +62,7 @@ namespace ExoCasualWear
 
         private void totalEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            totalemployees te = new totalemployees();
-            te.Show();
+          
         }
 
         private void itemsFrequencyToolStripMenuItem_Click(object sender, EventArgs e)
@@ -132,14 +136,113 @@ namespace ExoCasualWear
 
         private void manageStoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ManageStores mgs = new ManageStores();
-            mgs.Show();
+
         }
+<<<<<<< HEAD
+=======
+
+        private void employeeProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itemsListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Item_List il = new Item_List();
+            il.Show();
+        }
+
+        private void editItemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employees_List el = new Employees_List();
+            el.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Customer_List cl = new Customer_List();
+            cl.Show();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Customer_Profile cp = new Customer_Profile();
+            cp.Show();
+        }
+
+        private void suppliersListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Supplier_list sl = new Supplier_list();
+            sl.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Shippment_List shl = new Shippment_List();
+            shl.Show();
+
+        }
+>>>>>>> origin/Abdelmoez
 
         private void offersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Offer of = new Offer();
             of.Show();
         }
+<<<<<<< HEAD
+=======
+
+        private void shipmentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manageStoresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ManageStores mgs = new ManageStores();
+            mgs.Show();
+        }
+
+        private void totalEmployeesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            totalemployees te = new totalemployees();
+            te.Show();
+        }
+
+        private void addEmployeeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            addemployee ae = new addemployee();
+            ae.Show();
+        }
+
+        private void employeeProfileToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Employee_Profile ep = new Employee_Profile();
+            ep.Show();
+        }
+
+        private void mainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportsbutton_Click(object sender, EventArgs e)
+        {
+            ViewReciptContents ep = new ViewReciptContents();
+            ep.Show();
+        }
+
+        private void Inventorybutton_Click(object sender, EventArgs e)
+        {
+            Credits c = new Credits();
+            c.Show();
+        }
+
+>>>>>>> origin/Abdelmoez
     }
 }

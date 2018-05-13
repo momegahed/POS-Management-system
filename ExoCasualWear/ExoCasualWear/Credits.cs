@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace ExoCasualWear
 {
-    public partial class mostsolditemperstore : Form
+    public partial class Credits : Form
     {
-        Controller c;
-        public mostsolditemperstore()
+        public Credits()
         {
             InitializeComponent();
         }
 
-        private void searchbutton_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = c.ItemProfile(itemidtextbox.Text);
+
         }
+
     }
 }

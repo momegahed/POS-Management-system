@@ -94,6 +94,25 @@
       <DependentUpon>ChangeUserType.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller.cs" />
+    <Compile Include="Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer List.Designer.cs">
+      <DependentUpon>Customer List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Profile.Designer.cs">
+      <DependentUpon>Customer Profile.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="DBManager.cs" />
     <Compile Include="DeleteUser.cs">
       <SubType>Form</SubType>
@@ -101,11 +120,30 @@
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Item.Designer.cs">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="EditStore.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditStore.Designer.cs">
       <DependentUpon>EditStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Profile.Designer.cs">
+      <DependentUpon>Employee Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees List.Designer.cs">
+      <DependentUpon>Employees List.cs</DependentUpon>
     </Compile>
     <Compile Include="ExoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -233,6 +271,12 @@
     <Compile Include="totalsales.Designer.cs">
       <DependentUpon>totalsales.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewReciptContents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReciptContents.Designer.cs">
+      <DependentUpon>ViewReciptContents.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addcustomer.resx">
       <DependentUpon>addcustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +309,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer List.resx">
+      <DependentUpon>Customer List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Profile.resx">
+      <DependentUpon>Customer Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Item.resx">
+      <DependentUpon>Edit Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Profile.resx">
+      <DependentUpon>Employee Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees List.resx">
+      <DependentUpon>Employees List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item List.resx">
+      <DependentUpon>Item List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditStore.resx">
       <DependentUpon>EditStore.cs</DependentUpon>
@@ -314,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="totalsales.resx">
       <DependentUpon>totalsales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReciptContents.resx">
+      <DependentUpon>ViewReciptContents.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ExoDataSet.xsc">
       <DependentUpon>ExoDataSet.xsd</DependentUpon>
