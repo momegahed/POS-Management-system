@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExoCasualWear", "ExoCasualWear\ExoCasualWear.csproj", "{5A61BFA9-A7B4-4F73-B270-CDCC084E2B97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{751D25F0-94BF-43AD-B124-DEF3354AA9DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A61BFA9-A7B4-4F73-B270-CDCC084E2B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A61BFA9-A7B4-4F73-B270-CDCC084E2B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A61BFA9-A7B4-4F73-B270-CDCC084E2B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A61BFA9-A7B4-4F73-B270-CDCC084E2B97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A830142-C8A5-4311-9CA3-17F9E07AFD7D}
+	EndGlobalSection
+EndGlobal
