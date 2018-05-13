@@ -243,7 +243,10 @@ namespace ExoCasualWear
 
 
                 }
+
+                c.printR(Int32.Parse(RID.ToString()));
                 this.Close();
+
             }
             else { MessageBox.Show("Please add Items first", "Error"); }
         }

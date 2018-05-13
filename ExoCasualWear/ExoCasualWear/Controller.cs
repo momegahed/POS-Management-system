@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
-
+using System.Diagnostics;
+using System.ComponentModel;
+using System.IO;
 
 namespace ExoCasualWear
 {
@@ -260,11 +262,13 @@ namespace ExoCasualWear
         {
             string query = "INSERT INTO R_contains " +
                             "Values ('" + quantity + "','" + RID + "','" + ItemNum + "','" + price + "','" + descount + "');" +
-                           " UPDATE SoldAt SET Available = (SELECT Available FROM SoldAt AS OLDSoldAt WHERE SoldAt.ItemsNumber=OLDSoldAt.ItemsNumber AND SoldAt.StID=OLDSoldAt.StID)-" + quantity + " WHERE ItemsNumber='" + ItemNum + "' AND StID=(SELECT St_ID FROM Employee WHERE ID = '" + EmpID + "');"+
+                           " UPDATE SoldAt SET Available = (SELECT Available FROM SoldAt AS OLDSoldAt WHERE SoldAt.ItemsNumber=OLDSoldAt.ItemsNumber AND SoldAt.StID=OLDSoldAt.StID)-" + quantity + " WHERE ItemsNumber='" + ItemNum + "' AND StID=(SELECT St_ID FROM Employee WHERE ID = '" + EmpID + "');" +
                            " UPDATE SoldAt SET Sold = (SELECT Sold FROM SoldAt AS OLDSoldAt WHERE SoldAt.ItemsNumber=OLDSoldAt.ItemsNumber AND SoldAt.StID=OLDSoldAt.StID)+" + quantity + " WHERE ItemsNumber='" + ItemNum + "' AND StID=(SELECT St_ID FROM Employee WHERE ID = '" + EmpID + "');";
 
             return dbMan.UpdateData(query);
         }
+
+        
          //Function to auto generate the number od the reciept to be issued 
         public Int64 Receipt_AG() 
         {
@@ -357,7 +361,51 @@ namespace ExoCasualWear
         {
             string query = "SELECT Item#No AS Item_Number, Item_discription, Quantity , R_Contains.Price ,Discount FROM R_Contains, Receipt, Items WHERE Receipt# =" + ID + " AND Receipt#=ReceiptID AND Item#No=ItemNO#;";
             return dbMan.ExecuteTableQuery(query);
-        }   
+        }
+        public DataTable Reciptinfo(int ID)
+        {
+            string query = "SELECT * FROM Receipt WHERE Receipt# =" + ID + ";";
+            return dbMan.ExecuteTableQuery(query);
+        }
+
+        public void printR(int ID)
+        {
+            DataTable dt = new DataTable();
+            DataTable dt2 = new DataTable();
+            dt = ReciptProfile(ID);
+            dt2 = Reciptinfo(ID);
+
+            String s = String.Format("");
+            s += String.Format(" Recipt ID: ");
+            s += ID + "\n";
+            s += String.Format(" Date and Time: ");
+            s += dt2.Rows[0][4].ToString();
+            s += String.Format(" Customer ID: ");
+            s += dt2.Rows[0][5].ToString() + "\n";
+            s += String.Format(" Cashier ID: ");
+            s += dt2.Rows[0][6].ToString() + "\n======================================================\n";
+            s += String.Format("{0,5} {1,18} {2,10} {3,9} {4,3}\n======================================================\n\n", "item#", "Name", "Quantity", "Price", "Discount");
+
+            foreach (DataRow R in dt.Rows)
+            {
+                s += String.Format("{0,5} {1,20} {2,5} {3,12} {4,3}\n\n",
+                      R["Item_Number"].ToString(), R["Item_discription"].ToString(), R["Quantity"].ToString(), R["Price"].ToString(), R["Discount"].ToString());
+            }
+            s += String.Format("=======================================================\n\n");
+            s += String.Format("{0,15} {1,30}", "", " total before discount: ");
+            s += dt2.Rows[0][1].ToString() + "\n";
+            s += String.Format("{0,15} {1,30}", "", " discount: ");
+            s += dt2.Rows[0][2].ToString() + "\n";
+            s += String.Format("{0,15} {1,30}", "", " total after discount: ");
+            s += (Double.Parse(dt2.Rows[0][1].ToString()) - Double.Parse(dt2.Rows[0][2].ToString())).ToString() + "\n\n";
+            System.IO.File.WriteAllText(@"..\..\..\recipt.txt", s);
+            System.Diagnostics.ProcessStartInfo psi = new System.Diagnostics.ProcessStartInfo(@"..\..\..\recipt.txt");
+            psi.Verb = "PRINT";
+            psi.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(psi);
+        }
+
+
 
     }
 }

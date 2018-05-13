@@ -127,6 +127,7 @@
     </Compile>
     <Compile Include="Employees List.Designer.cs">
       <DependentUpon>Employees List.cs</DependentUpon>
+    </Compile>
 
     <Compile Include="ExoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -309,9 +310,7 @@
     <EmbeddedResource Include="Edit Item.resx">
       <DependentUpon>Edit Item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditStore.resx">
-      <DependentUpon>EditStore.cs</DependentUpon>
-    </EmbeddedResource>
+
     <EmbeddedResource Include="Employee Profile.resx">
       <DependentUpon>Employee Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -408,7 +407,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+ 
   </ItemGroup>
+
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
