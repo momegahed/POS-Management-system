@@ -12,6 +12,7 @@ namespace ExoCasualWear
 {
     public partial class addcustomer : Form
     {
+        DBManager dbMan =new DBManager();
         public addcustomer()
         {
             InitializeComponent();
@@ -25,6 +26,12 @@ namespace ExoCasualWear
         private void button1_Click(object sender, EventArgs e)
         {
             Controller c = new Controller();
+            if (subid.Text == "" && fname.Text == "" && lname.Text == "" && phonenumber.Text == "")
+            {
+                MessageBox.Show("Please fill all the data.");
+                return;
+            }
+
             c.InsertCustomer(int.Parse(subid.Text), fname.Text, lname.Text, phonenumber.Text);
         }
 
