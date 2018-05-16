@@ -13,16 +13,20 @@ namespace ExoCasualWear
     public partial class Main : Form
     {
         Int64 EMPTD;
-        String usertype;
+        int usertype;
         public Main()
         {
             InitializeComponent();
         }
-        public Main(Int64 ID, String type)
+        public Main(Int64 ID, int type)
         {
             InitializeComponent();
         }
-
+        public Main(int type)
+        {
+            InitializeComponent();
+            this.usertype = type;
+        }
         private void salesbutton_Click(object sender, EventArgs e)
         {
             Sales f = new Sales();
@@ -234,6 +238,28 @@ namespace ExoCasualWear
             Credits ere = new Credits();
 
             ere.Show();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            if (usertype != 1) {
+                adminToolStripMenuItem.Visible = false;
+
+            }
+            if (usertype != 3 && usertype != 1)
+            {
+                shipmentsToolStripMenuItem.Visible = false;
+                analysisToolStripMenuItem.Visible = false;
+                addItemToolStripMenuItem.Enabled = false;
+            
+            
+            
+            }
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

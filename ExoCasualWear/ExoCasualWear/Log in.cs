@@ -14,8 +14,8 @@ namespace ExoCasualWear
     public enum Privileges
     {
         Shop_Owner = 1,
-        Manager = 2,
-        Sales_Assistant = 3
+        Manager = 3,
+        Sales_Assistant = 2
 
     }
 
@@ -41,7 +41,7 @@ namespace ExoCasualWear
                 MessageBox.Show(" CORRECT !");
 
                 this.Hide();
-                Main mainform = new Main();
+                Main mainform = new Main(privlg);
                 mainform.Show();
             }
             else
@@ -75,6 +75,11 @@ namespace ExoCasualWear
         }
 
         private void label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

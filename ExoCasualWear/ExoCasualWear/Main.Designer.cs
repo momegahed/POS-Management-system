@@ -84,7 +84,7 @@
             this.reportsbutton.Name = "reportsbutton";
             this.reportsbutton.Size = new System.Drawing.Size(323, 103);
             this.reportsbutton.TabIndex = 1;
-            this.reportsbutton.Text = "Recipts";
+            this.reportsbutton.Text = "Receipts";
             this.reportsbutton.UseVisualStyleBackColor = true;
             this.reportsbutton.Click += new System.EventHandler(this.reportsbutton_Click);
             // 
@@ -302,6 +302,7 @@
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(157, 24);
             this.adminToolStripMenuItem.Text = "Admin Management";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // manageUsersToolStripMenuItem
             // 
@@ -365,6 +366,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
             this.Text = "Exo Casual Wear";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
